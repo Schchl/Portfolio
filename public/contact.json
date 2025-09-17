@@ -1,0 +1,56 @@
+{
+  "contacts": [
+    {
+      "platform": "Gmail",
+      "username": "schaum.chloe@gmail.com",
+      "image": "gmail.svg"
+    },
+    {
+      "platform": "Linkedin",
+      "username": "Chloé Schaum",
+      "image": "linkedin.svg",
+      "lien": "https://www.linkedin.com/in/chloé-schaum-8a0092260/"
+    },
+    {
+      "platform": "Instagram",
+      "username": "schchl_art",
+      "image": "insta.svg",
+      "lien": "https://www.instagram.com/schchl_art/"
+    },
+    {
+      "platform": "GitHub",
+      "username": "Schchl",
+      "image": "github.svg",
+      "lien": "https://github.com/Schchl"
+    },
+    {
+      "platform": "Discord",
+      "username": "schchl",
+      "image": "discord.svg"
+    },
+    {
+      "platform": "Spotify",
+      "username": "Schchl",
+      "image": "spotify.svg",
+      "lien": "https://open.spotify.com/user/7kyngt6lfzjf6mem4lf7c96ay"
+    },
+    {
+      "platform": "YouTube",
+      "username": "Schchl15",
+      "image": "youtube.svg",
+      "lien": "https://www.youtube.com/@Schchl15"
+    },
+    {
+      "platform": "Twitch",
+      "username": "schchl_chloe",
+      "image": "twitch.svg",
+      "lien": "https://www.twitch.tv/schchl_chloe"
+    },
+    {
+      "platform": "Pinterest",
+      "username": "Schchl15",
+      "image": "pinterest.svg",
+      "lien": "https://fr.pinterest.com/Schchl15/"
+    }
+  ]
+}

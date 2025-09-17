@@ -1,0 +1,110 @@
+{
+    "competences": {
+        "creationNumerique": [
+        {
+            "nom": "Illustrator",
+            "image": "competences/AI.png",
+            "categorie": "Design"
+        },
+        {
+            "nom": "Photoshop",
+            "image": "competences/PS.png",
+            "categorie": "Design"
+        },
+        {
+            "nom": "Première Pro",
+            "image": "competences/PR.png",
+            "categorie": "Vidéo"
+        },
+        {
+            "nom": "After Effect",
+            "image": "competences/AE.png",
+            "categorie": "Animation"
+        },
+        {
+            "nom": "Krita",
+            "image": "competences/krita.png",
+            "categorie": "Dessin"
+        },
+        {
+            "nom": "Figma",
+            "image": "competences/figma.png",
+            "categorie": "UI/UX"
+        },
+        {
+            "nom": "Canva",
+            "image": "competences/canva.png",
+            "categorie": "Design"
+        }
+        ],
+        "developpementWeb": [
+        {
+            "nom": "HTML",
+            "image": "competences/html.png",
+            "categorie": "Frontend"
+        },
+        {
+            "nom": "CSS",
+            "image": "competences/css.png",
+            "categorie": "Frontend"
+        },
+        {
+            "nom": "JavaScript",
+            "image": "competences/js.png",
+            "categorie": "Frontend"
+        },
+        {
+            "nom": "PHP",
+            "image": "competences/php.png",
+            "categorie": "Backend"
+        },
+        {
+            "nom": "WordPress",
+            "image": "competences/wordpress.png",
+            "categorie": "CMS"
+        },
+        {
+            "nom": "Laravel",
+            "image": "competences/laravel.png",
+            "categorie": "Framework"
+        },
+        {
+            "nom": "Angular",
+            "image": "competences/angular.png",
+            "categorie": "Framework"
+        },
+        {
+            "nom": "Node.js",
+            "image": "competences/node.png",
+            "categorie": "Backend"
+        },
+        {
+            "nom": "Unity",
+            "image": "competences/unity.png",
+            "categorie": "Développement de jeux"
+        },
+        {
+            "nom": "React",
+            "image": "competences/react.png",
+            "categorie": "Librairie JavaScript"
+        }
+        ],
+        "langues": [
+        {
+            "nom": "Français",
+            "niveau": "Langue natale",
+            "image": "competences/france.png"
+        },
+        {
+            "nom": "Anglais",
+            "niveau": "B2",
+            "image": "competences/anglais.png"
+        },
+        {
+            "nom": "Espagnol",
+            "niveau": "B1",
+            "image": "competences/espagne.png"
+        }
+        ]
+    }
+}

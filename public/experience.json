@@ -1,0 +1,57 @@
+{
+  "experiences": [
+    {
+      "date": "Juillet 2020 - Août 2020\nJuillet 2021 - Août 2021",
+      "label": "Distribution de tracts pour un restaurant",
+      "icon": "images/o_star.png"
+    },
+    {
+      "date": "Juillet 2022 - Août 2022",
+      "label": "Employée polyvalente au Casino Shop de Valras Plage",
+      "icon": "images/o_star.png"
+    },
+    {
+      "date": "Juillet 2023 - Août 2023\nJuillet 2024 - Août 2024",
+      "label": "Hôtesse de caisse Carrefour de Sérignan",
+      "icon": "images/o_star.png"
+    },
+    {
+      "date": "Janvier 2023",
+      "label": "Prix de la meilleure production graphique au Marathon MMI",
+      "icon": "images/o_star.png"
+    },
+    {
+      "date": "29 avril 2024 - 21 juin 2024",
+      "label": "Stage graphisme et développement CMS chez Distribution du Midi à Vendres et Jour2Marché",
+      "icon": "images/o_star.png"
+    },
+    {
+      "date": "8 avril 2025 - 21 juin 2025",
+      "label": "Stage multimédia pour la création d’un organigramme interactif chez Genvia à Béziers",
+      "icon": "images/o_star.png"
+    }
+    ],
+
+    "parcours": [
+    {
+      "date": "2015-2019",
+      "label": "Collège Françoise Giroud Vendres - Brevet mention très bien",
+      "icon": "images/y_star.png"
+    },
+    {
+      "date": "2019-2022",
+      "label": "Lycée Marc Bloch Sérignan - Baccalauréat mention assez bien",
+      "icon": "images/y_star.png"
+    },
+    {
+      "date": "2022 - 2025",
+      "label": "IUT Béziers - BUT Métiers du Multimédia et de l'Internet\nParcours développement web et dispositifs interactifs",
+      "icon": "images/y_star.png"
+    },
+    {
+      "date": "2025",
+      "label": "IAE Montpellier - Master Management de l’innovation\ne-Marketing",
+      "icon": "images/g_star.png"
+    }
+  ]
+}
