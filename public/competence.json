@@ -3,89 +3,89 @@
         "creationNumerique": [
         {
             "nom": "Illustrator",
-            "image": "competences/AI.png",
+            "image": "Portfolio/competences/AI.png",
             "categorie": "Design"
         },
         {
             "nom": "Photoshop",
-            "image": "competences/PS.png",
+            "image": "Portfolio/competences/PS.png",
             "categorie": "Design"
         },
         {
             "nom": "Première Pro",
-            "image": "competences/PR.png",
+            "image": "Portfolio/competences/PR.png",
             "categorie": "Vidéo"
         },
         {
             "nom": "After Effect",
-            "image": "competences/AE.png",
+            "image": "Portfolio/competences/AE.png",
             "categorie": "Animation"
         },
         {
             "nom": "Krita",
-            "image": "competences/krita.png",
+            "image": "Portfolio/competences/krita.png",
             "categorie": "Dessin"
         },
         {
             "nom": "Figma",
-            "image": "competences/figma.png",
+            "image": "Portfolio/competences/figma.png",
             "categorie": "UI/UX"
         },
         {
             "nom": "Canva",
-            "image": "competences/canva.png",
+            "image": "Portfolio/competences/canva.png",
             "categorie": "Design"
         }
         ],
         "developpementWeb": [
         {
             "nom": "HTML",
-            "image": "competences/html.png",
+            "image": "Portfolio/competences/html.png",
             "categorie": "Frontend"
         },
         {
             "nom": "CSS",
-            "image": "competences/css.png",
+            "image": "Portfolio/competences/css.png",
             "categorie": "Frontend"
         },
         {
             "nom": "JavaScript",
-            "image": "competences/js.png",
+            "image": "Portfolio/competences/js.png",
             "categorie": "Frontend"
         },
         {
             "nom": "PHP",
-            "image": "competences/php.png",
+            "image": "Portfolio/competences/php.png",
             "categorie": "Backend"
         },
         {
             "nom": "WordPress",
-            "image": "competences/wordpress.png",
+            "image": "Portfolio/competences/wordpress.png",
             "categorie": "CMS"
         },
         {
             "nom": "Laravel",
-            "image": "competences/laravel.png",
+            "image": "Portfolio/competences/laravel.png",
             "categorie": "Framework"
         },
         {
             "nom": "Angular",
-            "image": "competences/angular.png",
+            "image": "Portfolio/competences/angular.png",
             "categorie": "Framework"
         },
         {
             "nom": "Node.js",
-            "image": "competences/node.png",
+            "image": "Portfolio/competences/node.png",
             "categorie": "Backend"
         },
         {
             "nom": "Unity",
-            "image": "competences/unity.png",
+            "image": "Portfolio/competences/unity.png",
             "categorie": "Développement de jeux"
         },
         {
             "nom": "React",
-            "image": "competences/react.png",
+            "image": "Portfolio/competences/react.png",
             "categorie": "Librairie JavaScript"
         }
         ],
@@ -93,17 +93,17 @@
         {
             "nom": "Français",
             "niveau": "Langue natale",
-            "image": "competences/france.png"
+            "image": "Portfolio/competences/france.png"
         },
         {
             "nom": "Anglais",
             "niveau": "B2",
-            "image": "competences/anglais.png"
+            "image": "Portfolio/competences/anglais.png"
         },
         {
             "nom": "Espagnol",
             "niveau": "B1",
-            "image": "competences/espagne.png"
+            "image": "Portfolio/competences/espagne.png"
         }
         ]
     }

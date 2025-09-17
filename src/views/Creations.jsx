@@ -10,7 +10,7 @@ export default function MesCreations() {
   const [iframeZoom, setIframeZoom] = useState(0.5);
 
   useEffect(() => {
-    fetch('/mes_creations.json')
+    fetch('/Portfolio/mes_creations.json')
       .then(res => res.json())
       .then(setCreations)
       .catch(err => console.error("Erreur de chargement du JSON :", err));

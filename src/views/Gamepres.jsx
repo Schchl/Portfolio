@@ -22,7 +22,7 @@ export default function Gamepres() {
         {/* Minecraft */}
         <section className="flex flex-col items-center text-center md:text-left">
           <img
-            src="/game/minecraft.png"
+            src="/Portfolio/game/minecraft.png"
             alt="Minecraft"
             className="mb-4 object-contain"
             style={{ width: 'auto', height: '160px' }}
@@ -40,7 +40,7 @@ export default function Gamepres() {
         {/* Among Us */}
         <section className="flex flex-col items-center text-center md:text-left">
           <img
-            src="/game/amongus.png"
+            src="/Portfolio/game/amongus.png"
             alt="Among Us"
             className="mb-4 object-contain"
             style={{ width: 'auto', height: '160px' }}
@@ -58,7 +58,7 @@ export default function Gamepres() {
         {/* Valorant */}
         <section className="flex flex-col items-center text-center md:text-left md:col-span-2">
           <img
-            src="/game/skye.png"
+            src="/Portfolio/game/skye.png"
             alt="Skye de Valorant"
             className="mb-4 object-contain"
             style={{ width: 'auto', height: '160px' }}

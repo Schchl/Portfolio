@@ -15,7 +15,7 @@ export default function Competences({ theme }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/competence.json')
+    fetch('/Portfolio/competence.json')
       .then(response => {
         if (!response.ok) throw new Error('Erreur lors du chargement des données');
         return response.json();

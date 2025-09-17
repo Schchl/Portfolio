@@ -7,7 +7,7 @@ export default function Contacts() {
   const theme = useTheme();
 
   useEffect(() => {
-    fetch('/contact.json')
+    fetch('/Portfolio/contact.json')
       .then(res => {
         if (!res.ok) throw new Error(`Erreur HTTP : ${res.status}`);
         return res.json();

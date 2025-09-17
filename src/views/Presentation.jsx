@@ -69,7 +69,7 @@ const Presentation = () => {
         >
           <img
             className="rounded-full w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[450px] lg:h-[450px] hover:opacity-80 transition"
-            src="/images/tete.png"
+            src="/Portfolio/images/tete.png"
             alt="Chloé"
           />
         </NavLink>

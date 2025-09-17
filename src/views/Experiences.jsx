@@ -12,7 +12,7 @@ export default function Timeline() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/experience.json')
+    fetch('/Portfolio/experience.json')
       .then(response => {
         if (!response.ok) throw new Error('Erreur lors du chargement des données');
         return response.json();
