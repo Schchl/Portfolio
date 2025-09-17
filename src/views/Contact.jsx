@@ -56,7 +56,7 @@ export default function Contacts() {
               }}
             >
               <img
-                src={`/contact/${
+                src={`/Portfolio/contact/${
                   contact.platform === "GitHub"
                     ? theme.palette.mode === "dark"
                       ? "github.png"

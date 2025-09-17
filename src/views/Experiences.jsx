@@ -30,8 +30,8 @@ export default function Timeline() {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const getIconPath = (iconName) => {
-    if (iconName && iconName.startsWith("/")) return iconName;
-    return `/${iconName}`;
+    if (iconName && iconName.startsWith("/")) return `/Portfolio${iconName}`;
+    return `/Portfolio/${iconName}`;
   };
 
   const extractYearFromDate = (dateStr) => {

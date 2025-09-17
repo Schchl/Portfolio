@@ -36,7 +36,7 @@ export default function Competences({ theme }) {
 
   const handleImageError = (e) => {
     e.target.onerror = null;
-    e.target.src = '/placeholder-icon.png';
+    e.target.src = '/Portfolio/placeholder-icon.png';
   };
 
   const getLangueNiveauStyle = () => {
@@ -88,7 +88,7 @@ export default function Competences({ theme }) {
                     }}
                   >
                     <img
-                      src={competence.image}
+                      src={`/Portfolio${competence.image}`}
                       alt={competence.nom}
                       className="w-16 h-16 mb-2 object-contain"
                       onError={handleImageError}
@@ -125,7 +125,7 @@ export default function Competences({ theme }) {
                     }}
                   >
                     <img
-                      src={competence.image}
+                      src={`/Portfolio ${competence.image}`}
                       alt={competence.nom}
                       className="w-16 h-16 mb-2 object-contain"
                       onError={handleImageError}
@@ -172,7 +172,7 @@ export default function Competences({ theme }) {
                     }}
                   >
                     <img
-                      src={langue.image}
+                      src={`/Portfolio${langue.image}`}
                       alt={langue.nom}
                       className="w-20 h-20 mb-2 object-contain"
                       onError={handleImageError}

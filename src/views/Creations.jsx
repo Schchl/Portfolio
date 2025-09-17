@@ -120,7 +120,7 @@ export default function MesCreations() {
             <h2 className="text-xl font-semibold mb-2">{creation.title}</h2>
               {creation.cover && (
                 <img
-                  src={creation.cover}
+                  src={`/Portfolio${creation.cover}`}
                   alt={creation.title}
                   className="w-full h-48 object-cover rounded mb-2"
                 />
@@ -132,7 +132,7 @@ export default function MesCreations() {
                     {creation.logiciel.map((logo, idx) => (
                       <img
                         key={idx}
-                        src={logo}
+                        src={`/Portfolio${logo}`}
                         alt="logo logiciel"
                         className="h-8 w-auto"
                         style={{ objectFit: 'contain' }}
@@ -226,7 +226,7 @@ export default function MesCreations() {
                         style={{ height: '500px', maxWidth: '100%' }}
                       >
                         <img
-                          src={images[0]}
+                          src={`/Portfolio${images[0]}`}
                           alt="media"
                           className="max-w-full max-h-full object-contain"
                           style={{ maxWidth: '100%', height: 'auto' }}
@@ -269,7 +269,7 @@ export default function MesCreations() {
                                 style={{ height: '500px', maxWidth: '100%' }}
                               >
                                 <img
-                                  src={img}
+                                  src={`/Portfolio${img}`}
                                   alt={`slide-${idx}`}
                                   className="max-w-full max-h-full object-contain"
                                   style={{ maxWidth: '100%', height: 'auto' }}
