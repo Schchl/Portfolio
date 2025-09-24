@@ -61,7 +61,9 @@ export default function Contacts() {
                     ? theme.palette.mode === "dark"
                       ? "github.png"
                       : "github.svg"
-                    : contact.image
+                    : contact.image.startsWith('/') 
+                      ? contact.image.slice(1) // Enlève le / du début
+                      : contact.image
                 }`}
                 alt={`${contact.platform} logo`}
                 className="w-12 h-12 mb-3 mx-auto"
