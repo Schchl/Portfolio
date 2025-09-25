@@ -1,6 +1,6 @@
 import { StrictMode, useMemo, useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import React from 'react'
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import { LightPalette, DarkPalette } from './components/Theme';
 import App from './App.jsx';
