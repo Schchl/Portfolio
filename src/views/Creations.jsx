@@ -123,6 +123,9 @@ export default function MesCreations() {
                   src={`/Portfolio${creation.cover}`}
                   alt={creation.title}
                   className="w-full h-48 object-cover rounded mb-2"
+                  onError={(e) => {
+                    console.log('Failed to load image:', e.target.src);
+                  }}
                 />
               )}
 
