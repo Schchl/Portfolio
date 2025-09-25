@@ -38,17 +38,19 @@ function App() {
   return (
     <ThemeProvider theme={muiTheme}>
       <CssBaseline />
-      <Header theme={theme} toggleTheme={toggleTheme} />
-      <Routes>
-        <Route path="/" element={<Presentation theme={theme} />} />
-        <Route path="/comp" element={<Competences theme={theme} />} />
-        <Route path="/exp" element={<Experiences theme={theme} />} />
-        <Route path="/crea" element={<Creations theme={theme} />} />
-        <Route path="/contact" element={<Contact theme={theme} />} />
-        <Route path="/transition-to-game" theme={theme} element={<BinaryRoute to="/game" />} />
-        <Route path="/game" element={<Gamepres theme={theme} />} />
-        <Route path="*" element={<NotFound theme={theme} />} />
-      </Routes>
+      <Router>
+        <Header theme={theme} toggleTheme={toggleTheme} />
+        <Routes>
+          <Route path="/" element={<Presentation theme={theme} />} />
+          <Route path="/comp" element={<Competences theme={theme} />} />
+          <Route path="/exp" element={<Experiences theme={theme} />} />
+          <Route path="/crea" element={<Creations theme={theme} />} />
+          <Route path="/contact" element={<Contact theme={theme} />} />
+          <Route path="/transition-to-game" element={<BinaryRoute to="/game" theme={theme} />} />
+          <Route path="/game" element={<Gamepres theme={theme} />} />
+          <Route path="*" element={<NotFound theme={theme} />} />
+        </Routes>
+      </Router>
     </ThemeProvider>
   );
 }
