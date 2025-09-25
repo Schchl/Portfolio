@@ -174,6 +174,7 @@ export default function Timeline() {
                           alt="Icône"
                           className="w-6 h-6 object-contain"
                           onError={(e) => {
+                            console.log('Failed to load image:', e.target.src);
                             // Sur mobile, masquer complètement l'image en cas d'erreur
                             e.target.style.display = 'none';
                           }}
