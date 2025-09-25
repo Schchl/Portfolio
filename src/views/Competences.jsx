@@ -125,7 +125,7 @@ export default function Competences({ theme }) {
                     }}
                   >
                     <img
-                      src={`/Portfolio ${competence.image}`}
+                      src={`/Portfolio${competence.image}`}
                       alt={competence.nom}
                       className="w-16 h-16 mb-2 object-contain"
                       onError={handleImageError}
