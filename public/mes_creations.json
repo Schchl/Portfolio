@@ -1,11 +1,11 @@
 [
   {
     "title": "Flat Design",
-    "cover": "/Portfolio/creations/flat-design.png",
+    "cover": "/creations/flat-design.png",
     "gallery": [     
-    "Portfolio/creations/flat-design.png",
-    "Portfolio/creations/paysage.jpg",
-    "Portfolio/creations/bateau.png"
+    "/creations/flat-design.png",
+    "/creations/paysage.jpg",
+    "/creations/bateau.png"
     ],
     "modal_id": "creation_1",
     "categories": [
@@ -13,29 +13,29 @@
     ],
     "description": "Cette création est un flat design d'un paysage réalisé sur Illustrator dans le cadre d'un rendu sur la ressource Culture artistique.",
     "logiciel": [
-      "Portfolio/competences/AI.png"
+      "/competences/AI.png"
     ]
   },
   {
     "title": "Morphing",
-    "cover": "/Portfolio/creations/morphing_art.jpg",
+    "cover": "/creations/morphing_art.jpg",
     "gallery": [     
-    "Portfolio/creations/morphing.jpg",
-    "Portfolio/creations/parrot.jpg",
-    "Portfolio/creations/telephone.jpg"
+    "/creations/morphing.jpg",
+    "/creations/parrot.jpg",
+    "/creations/telephone.jpg"
     ],
     "modal_id": "creation_2",
     "categories": [
       "Graphisme"
     ],
     "logiciel": [
-      "Portfolio/competences/PS.png"
+      "/competences/PS.png"
     ],
     "description": "Cette création est un morphing entre un téléphone et un perroquet réalisé sur Photoshop. Le choix du perroquet n'est pas anodin, le but était de rappeler que les personnes au bout du fil peuvent parler autant que des perroquets."
   },
   {
     "title": "Interview SAE104",
-    "cover": "/Portfolio/creations/interview.png",
+    "cover": "/creations/interview.png",
     "gallery": [     
     "https://drive.google.com/file/d/1vHPceNtJQiRvE9-5HHTaA7x9fKYkYen-/preview"
     ],
@@ -44,13 +44,13 @@
       "Audiovisuel"
     ],
     "logiciel": [
-      "Portfolio/competences/PR.png"
+      "/competences/PR.png"
     ],
     "description": "Cette vidéo a été tournée dans le cadre de notre première SAE en audiovisuel, le but était d'interviewer une personne de notre groupe avec une passion \"atypique\"."
   },
   {
     "title": "CV Animé",
-    "cover": "/Portfolio/creations/CV_anime.png",
+    "cover": "/creations/CV_anime.png",
     "gallery": [     
     "https://drive.google.com/file/d/1RStjSJjcu7ism99IsdQFDyG2fnDc_e7O/preview"
     ],
@@ -59,13 +59,13 @@
       "Graphisme"
     ],
     "logiciel": [
-      "Portfolio/competences/AE.png"
+      "/competences/AE.png"
     ],
     "description": "J'ai pu créer ce CV animé afin de pouvoir dynamiser mes recherches de stage de deuxième année de MMI. Pour ce projet nous avons du utiliser After Effect pour l'animation."
   },
   {
     "title": "Hackathon 2023 - Preuve de concept",
-    "cover": "/Portfolio/creations/hackathon_logo.png",
+    "cover": "/creations/hackathon_logo.png",
     "gallery": [     
     "https://drive.google.com/file/d/1uYYNo7wsOQspBq17NVfNxCd-Y3UjhSzH/preview"
     ],
@@ -74,28 +74,28 @@
       "Audiovisuel"
     ],
     "logiciel": [
-      "Portfolio/competences/PR.png",
-      "Portfolio/competences/AE.png"
+      "/competences/PR.png",
+      "/competences/AE.png"
     ],
     "description": "Le Hackathon est un évènement visant à regrouper toutes les formation de l'IUT autour d'un projet / problématique à laquelle nous devions répondre. Le thème de cette année 2023 était la sobriété énergétique et la sobriété numérique. Notre commanditaire était le Crédit Agricole et notre but était de promouvoir leur application \"Ma Banque\". A la suite de ce Hackathon nous avons remporté le prix de la sympathie afin de montrer notre cohésion et notre travail d'équipe."
   },
   {
     "title": "Charte Graphique Tech-Aid",
-    "cover": "/Portfolio/creations/tech-Aid.png",
+    "cover": "/creations/tech-Aid.png",
     "gallery": [],
-    "iframe": "Portfolio/creations/charte_graphique.png",
+    "iframe": "/creations/charte_graphique.png",
     "modal_id": "creation_6",
     "categories": [
       "Graphisme"
     ],
     "logiciel": [
-      "Portfolio/competences/AI.png"
+      "/competences/AI.png"
     ],
     "description": "Pour ce travail j'étais avec Roman Dalenc un camarade de classe, et nous devions créer une identité graphique pour une entreprise fictive d'aide en informatique pour les personnes âgées. Nous avons réalisé cette charte sur le logiciel Illustrator."
   },
   {
     "title": "SAE 105 Site visite IUT",
-    "cover": "/Portfolio/creations/logo_iut.png",
+    "cover": "/creations/logo_iut.png",
     "gallery": [],
     "link": "http://web-mmi2.iutbeziers.fr/~chloe.schaum/SAE105/",
     "modal_id": "creation_7",
@@ -103,15 +103,15 @@
       "Dev-web"
     ],
     "logiciel": [
-      "Portfolio/competences/html2.png",
-      "Portfolio/competences/css2.png",
-      "Portfolio/competences/js2.png"
+      "/competences/html2.png",
+      "/competences/css2.png",
+      "/competences/js2.png"
     ],
     "description": "Nous avons créé ce site web lors de notre première SAE 105 développement web, nous devions prendre des photos de l'IUT et les mettre dans notre code HTML et CSS avec un peu de JavaScript afin de mettre en application les connaissances acquises en cours. Afin de voir le site web cliquez ici ."
   },
   {
     "title": "Site Articles Imagine Dragons",
-    "cover": "/Portfolio/creations/imagine_dragons_logo.png",
+    "cover": "/creations/imagine_dragons_logo.png",
     "gallery": [],
     "link": "http://web-mmi2.iutbeziers.fr/~chloe.schaum/wordpress3/",
     "modal_id": "creation_8",
@@ -119,13 +119,13 @@
       "Graphisme"
     ],
     "logiciel": [
-      "Portfolio/competences/wordpress.png"
+      "/competences/wordpress.png"
     ],
     "description": "Nous avons créé ce site Wordpress afin de travailler notre rédaction d'articles ainsi que leur disposition sur un site web. J'ai décidé de prendre le sujet du groupe Imagine Dragons car j'adore leurs musiques et je m'en inspire souvent sur beaucoup de sujets. Afin de voir le site web cliquez ici ."
   },
   {
     "title": "SAE 201 Ravage",
-    "cover": "/Portfolio/creations/ravage.png",
+    "cover": "/creations/ravage.png",
     "gallery": [     
     "https://drive.google.com/file/d/1sX3AZc5TxmalBIEOe2S0Y8w722ZAH9Yp/preview"
     ],
@@ -136,31 +136,31 @@
       "CMS"
     ],
     "logiciel": [
-      "Portfolio/competences/wordpress.png",
-      "Portfolio/competences/PR.png",
-      "Portfolio/competences/AE.png"
+      "/competences/wordpress.png",
+      "/competences/PR.png",
+      "/competences/AE.png"
     ],
     "description": "Cette SAE était une SAE communication en groupes de 5 personnes, le but était de créer un jeu de société \"comme\" le jeu Risk en prenant en compte les enjeux politiques ainsi que les ressources. Après avoir créer et designer le jeu, nous devions créer un teaser promotionnel ainsi qu'un site web. Voici le lien du site cliquez ici ."
   },
   {
     "title": "Animation logo MMI",
-    "cover": "/Portfolio/creations/logo_mmi.png",
+    "cover": "/creations/logo_mmi.png",
     "gallery": [     
-    "Portfolio/creations/logo_mmi.gif",
-    "Portfolio/creations/logo_mmi.png"
+    "/creations/logo_mmi.gif",
+    "/creations/logo_mmi.png"
     ],
     "modal_id": "creation_10",
     "categories": [
       "Graphisme"
     ],
     "logiciel": [
-      "Portfolio/competences/AE.png"
+      "/competences/AE.png"
     ],
     "description": "Le logo de notre formation MMI Béziers existe depuis 2022 mais il n'avait pas encore d'animation, notre but était de créer une animation de ce logo sur After Effect, la meilleure animation a été choisie pour représenter la formation."
   },
   {
     "title": "Hackathon 2024 Making Of",
-    "cover": "/Portfolio/creations/hackathon_2024.png",
+    "cover": "/creations/hackathon_2024.png",
     "gallery": [     
     "https://drive.google.com/file/d/1pjWjh53HuObDmDT5zHpxTdFg5xqgKtx7/preview"
     ],
@@ -169,13 +169,13 @@
       "Audiovisuel"
     ],
     "logiciel": [
-      "Portfolio/competences/PR.png"
+      "/competences/PR.png"
     ],
     "description": "Le Hackathon est un évènement visant à regrouper toutes les formation de l'IUT autour d'un projet / problématique à laquelle nous devions répondre. Le thème de cette année 2024 était les vulnérabilités. Mon but lors de ce Hackathon était de filmer le quotidien de l'équipe lors de cette semaine intense et d'en faire une vidéo Making Of. A la suite de ce Hackathon nous avons remporté le prix de la sympathie afin de montrer notre cohésion et notre travail d'équipe."
   },
   {
     "title": "Style de montage Poudovkine",
-    "cover": "/Portfolio/creations/poudov.png",
+    "cover": "/creations/poudov.png",
     "gallery": [     
     "https://drive.google.com/file/d/1mwO5Aaoi5PQk5lJItIRbHNIj5lRr8LCS/preview"
     ],
@@ -184,13 +184,13 @@
       "Audiovisuel"
     ],
     "logiciel": [
-      "Portfolio/competences/PR.png"
+      "/competences/PR.png"
     ],
     "description": "Pour notre cours de Production audio et vidéo, nous avons dû créer deux vidéos en utilisant les différents style de montage de Vsevolod Poudovkine. Sur ce projet mon rôle était ingénieure lumière avec mon camarde Roman Dalenc. Notre but était de bien régler les lumières grâce aux méthodes que nous avons apprise. Ici, il n'y a qu'une vidéo car en vérité les deux sont les mêmes, seul la fin diffère."
   },
   {
     "title": "SAE 203 Site Web PHP",
-    "cover": "/Portfolio/creations/php_art.png",
+    "cover": "/creations/php_art.png",
     "gallery": [],
     "link": "http://web-mmi2.iutbeziers.fr/~chloe.schaum/SAE203/",
     "modal_id": "creation_13",
@@ -198,15 +198,15 @@
       "Dev-web"
     ],
     "logiciel": [
-      "Portfolio/competences/html2.png",
-      "Portfolio/competences/css2.png",
-      "Portfolio/competences/php.png"
+      "/competences/html2.png",
+      "/competences/css2.png",
+      "/competences/php.png"
     ],
     "description": "Lors de notre SAE203 en binôme avec ma camarade Pauline Redon, nous avons appris à coder un site en HTML, CSS et PHP en utilisant une base de donnée pour créer une inscription et une identification au site ainsi que pour le stockage des données et leurs affichage. Afin de voir le site web cliquez ici ."
   },
   {
     "title": "Site Web Spotify",
-    "cover": "/Portfolio/creations/spotify.png",
+    "cover": "/creations/spotify.png",
     "gallery": [],
     "link": "http://web-mmi2.iutbeziers.fr/~chloe.schaum/Site_integration_spotify/",
     "modal_id": "creation_14",
@@ -214,14 +214,14 @@
       "Dev-web"
     ],
     "logiciel": [
-      "Portfolio/competences/html2.png",
-      "Portfolio/competences/css2.png"
+      "/competences/html2.png",
+      "/competences/css2.png"
     ],
     "description": "Pour notre cours d'intégration, nous devions réaliser un site web en HTML, CSS et JavaScript en utilisant les données d'un playlist Spotify ainsi que ses musiques stockées sur un fichier json pour pouvoir les afficher sur le site. Afin de voir le site web cliquez ici ."
   },
   {
     "title": "Marathon MMI 2024",
-    "cover": "/Portfolio/creations/marathon.png",
+    "cover": "/creations/marathon.png",
     "gallery": [],
     "link": "https://web-mmi.iutbeziers.fr/Marathon_2024/Marathon_2024_18/wordpress/",
     "modal_id": "creation_15",
@@ -229,13 +229,13 @@
       "CMS"
     ],
     "logiciel": [
-      "Portfolio/competences/wordpress.png"
+      "/competences/wordpress.png"
     ],
     "description": "Le Marathon MMI est un évènement regroupant les trois années du BUT MMI nous permettant d'être confrontés à une situation professionnelle avec des commanditaires et des rendus multimédia en moins d'une semaine. A la fin de cette semaine nous devons rendre: une charte graphique, un logo, un flyer, un site wordpress, une vidéo promotionnelle de 3 minutes ainsi qu'un teaser. Lors de ce marathon notre commanditaire était le pôle Entreprise de l'IUT dirigé par Madame Comos. J'étais en équipe avec Tom Capodanno afin de réaliser le wordpress ainsi que son contenu. le site web a été un peu modifié depuis le marathon. Afin de voir le site web cliquez ici ."
   },
   {
     "title": "Vodùn",
-    "cover": "/Portfolio/creations/vodun.png",
+    "cover": "/creations/vodun.png",
     "gallery": [     
     "https://drive.google.com/file/d/1kJf6rMCWEPND63rF4aShfLZxAUaL0cYw/preview"
     ],
@@ -244,13 +244,13 @@
       "Graphisme"
     ],
     "logiciel": [
-      "Portfolio/competences/PR.png"
+      "/competences/PR.png"
     ],
     "description": "Lors de la SAE302 nous devions réaliser un court-métrage sur le thème du cauchemard mais plus précisément le vaudou. Par groupe de 5 nous devions gérer le tournage: Scénario, Caméra, Lumière, Décors, Montage... mais nous devions aussi réaliser un générique sur le logiciel Animate."
   },
   {
     "title": "Jeu vidéo Phaser",
-    "cover": "/Portfolio/creations/phaser.png",
+    "cover": "/creations/phaser.png",
     "gallery": [],
     "link": "https://codesandbox.io/embed/the-requiem-rzqzsy?fontsize=14&hidenavigation=1&theme=dark&view=preview",
     "modal_id": "creation_17",
@@ -258,13 +258,13 @@
       "Dev-web"
     ],
     "logiciel": [
-      "Portfolio/competences/js2.png"
+      "/competences/js2.png"
     ],
     "description": "Nous avons créé ce jeu vidéo en groupe de 5 personnes lors de notre SAE301 en utilisant la librairie JavaScript: Phaser. Nous devions créer ce jeu de toute pièce, c'est-à-dire de l'histoire aux designs en passant par le codage. Nous nous sommes réparties les tâches et je me suis occupée du développement du jeu. Afin de pouvoir jouer à notre jeu cliquez ici ."
   },
   {
     "title": "Site Bigflo & Oli",
-    "cover": "/Portfolio/creations/beo.png",
+    "cover": "/creations/beo.png",
     "gallery": [],
     "link": "http://web-mmi2.iutbeziers.fr/~chloe.schaum/BigfloEtOli/",
     "modal_id": "creation_18",
@@ -272,19 +272,19 @@
       "Dev-web"
     ],
     "logiciel": [
-      "Portfolio/competences/html2.png",
-      "Portfolio/competences/css2.png"
+      "/competences/html2.png",
+      "/competences/css2.png"
     ],
     "description": "Lors d'un cours en Création et Design interactif, nous devions designer une page web sur un artiste ou un groupe de notre choix sur le logiciel Figma et par la suite le coder en HTML et CSS pour montrer notre capacité à reproduir une maquette en site. Afin de voir le site web cliquez ici ."
   },
   {
     "title": "CodeGameJam Ubisoft",
-    "cover": "/Portfolio/creations/bobbi_art.png",
+    "cover": "/creations/bobbi_art.png",
     "gallery": [     
-    "Portfolio/creations/bobbi.png",
-    "Portfolio/creations/bobbi_switch.png",
-    "Portfolio/creations/bobbi_twitter.jpg",
-    "Portfolio/creations/bobbi_discord.png"
+    "/creations/bobbi.png",
+    "/creations/bobbi_switch.png",
+    "/creations/bobbi_twitter.jpg",
+    "/creations/bobbi_discord.png"
     ],
     "modal_id": "creation_19",
     "categories": [
@@ -294,7 +294,7 @@
   },
   {
     "title": "Anglais recette Whiskey",
-    "cover": "/Portfolio/creations/whiskey.png",
+    "cover": "/creations/whiskey.png",
     "gallery": [     
     "https://drive.google.com/file/d/12zVdpC6ifYahjLecAHcHKpJVew8ahCrh/preview"
     ],
@@ -303,17 +303,17 @@
       "Communication"
     ],
     "logiciel": [
-      "Portfolio/competences/canva.png"
+      "/competences/canva.png"
     ],
     "description": "Pour ce rendu en anglais, une recette aléatoire contenant du Whiskey nous a été attribué avec ma camarade de classe Soraya Laïchour. Nous devions réaliser une vidéo en décrivant les ingrédients pour pouvoir faire le meilleur \"Whiskey apple-smoked pork\". Nous devions aussi faire très attention aux unités de mesure car ce ne sont pas les mêmes en anglais qu'en français."
   },
   {
     "title": "Pokédex Angular Laravel",
-    "cover": "/Portfolio/creations/pokedex.png",
+    "cover": "/creations/pokedex.png",
     "gallery": [     
-    "Portfolio/creations/pd_accueil.png",
-    "Portfolio/creations/pd_poke.png",
-    "Portfolio/creations/pd_drac.png"
+    "/creations/pd_accueil.png",
+    "/creations/pd_poke.png",
+    "/creations/pd_drac.png"
     ],
     "link": "https://www.figma.com/design/JsllGGNETgHWaC980CQuyk/maquette-pokemon?node-id=0-1&t=Ivv6t1I7WwhSiYSZ-1",
     "modal_id": "creation_21",
@@ -321,8 +321,8 @@
       "Dev-web"
     ],
     "logiciel": [
-      "Portfolio/competences/angular.png",
-      "Portfolio/competences/laravel.png"
+      "/competences/angular.png",
+      "/competences/laravel.png"
     ],
     "description": "Nous devions réaliser une application web du pokédex avec l'aide de 2 camardes de Création Numérique Lilia Jaziri et Lina Missaoui qui ont réalisé une maquette sur Figma que je devais reproduire en code avec Angular et Laravel en récupérant les données des pokémons dans une API."
   }
