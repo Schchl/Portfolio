@@ -34,11 +34,6 @@ export default function Timeline() {
     return `/Portfolio/${iconName}`;
   };
 
-  const handleImageError = (e) => {
-    e.target.onerror = null;
-    e.target.src = '/Portfolio/placeholder-icon.png';
-  };
-
   const extractYearFromDate = (dateStr) => {
     const yearMatch = dateStr.match(/\b(20\d{2})\b/);
     if (yearMatch && yearMatch[1]) return parseInt(yearMatch[1], 10);
@@ -178,7 +173,11 @@ export default function Timeline() {
                           src={getIconPath(item.icon)}
                           alt="Icône"
                           className="w-6 h-6 object-contain"
-                          onError={handleImageError}
+                          onError={(e) => {
+                            console.log('Failed to load image:', e.target.src);
+                            // Sur mobile, masquer complètement l'image en cas d'erreur
+                            e.target.style.display = 'none';
+                          }}
                         />
                       </div>
                     </div>
@@ -233,7 +232,14 @@ export default function Timeline() {
                         src={getIconPath(item.icon)}
                         alt="Icône"
                         className="w-8 h-8 object-contain"
-                        onError={handleImageError}
+                        onError={(e) => {
+                          // Sur desktop, afficher l'étoile en cas d'erreur
+                          e.target.onerror = null;
+                          e.target.src =
+                            item.category === 'experiences'
+                              ? "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f97316'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27z'/%3E%3C/svg%3E"
+                              : "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27z'/%3E%3C/svg%3E";
+                        }}
                       />
                     </div>
 
