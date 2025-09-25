@@ -22,9 +22,9 @@ function Main() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter>
+      <React.StrictMode>
         <App theme={themeMode} toggleTheme={toggleTheme} />
-      </BrowserRouter>
+      </React.StrictMode>
     </ThemeProvider>
   );
 }
