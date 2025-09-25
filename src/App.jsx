@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route }from 'react-router-dom';
 import { useState, useEffect, useMemo } from 'react';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import { LightPalette, DarkPalette } from './components/Theme';
