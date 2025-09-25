@@ -91,7 +91,11 @@ export default function Competences({ theme }) {
                       src={`/Portfolio${competence.image}`}
                       alt={competence.nom}
                       className="w-16 h-16 mb-2 object-contain"
-                      onError={handleImageError}
+                      onError={(e) => {
+                        console.log('Erreur image:', `/Portfolio${competence.image}`);
+                        e.target.onerror = null;
+                        e.target.src = '/Portfolio/placeholder-icon.png';
+                      }}
                     />
                     <p className="font-medium">{competence.nom}</p>
                     <span
