@@ -35,9 +35,10 @@ export default function Timeline() {
   };
 
   const handleImageError = (e) => {
-    e.target.onerror = null;
-    e.target.src = '/Portfolio/placeholder-icon.png';
-  };
+  console.log('Image failed to load:', e.target.src);
+  e.target.onerror = null;
+  e.target.style.display = 'none'; // Cache l'image cassée
+};
 
   const extractYearFromDate = (dateStr) => {
     const yearMatch = dateStr.match(/\b(20\d{2})\b/);
