@@ -1,87 +1,63 @@
 import { createTheme } from "@mui/material/styles";
 
-// Tokens partagés : cadrage — viseur, live, création multi-format
-const typography = {
-    fontFamily: "'Inter', system-ui, sans-serif",
-    h1: { fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, letterSpacing: '-0.01em' },
-    h2: { fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, letterSpacing: '-0.01em' },
-    h3: { fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600 },
-    button: { fontFamily: "'JetBrains Mono', monospace", textTransform: 'none', fontWeight: 500 },
-};
-
-// Thème clair — blanc cassé, corail en accent
+// Thème clair
 export const LightPalette = createTheme({
-    typography,
     palette: {
         mode: 'light',
         primary: {
-            main: '#e8264a',
-            hover: '#c81f3d',
+            main: '#3090f7',
+            hover: '#208bc5',
         },
         background: {
-            default: '#f6f5f3',
-            paper: '#ffffff',
-            presentation: 'linear-gradient(to top right, #f6f5f3 30%, #2dd4c6 130%)'
+            default: '#f9fafb',
+            presentation: 'linear-gradient(to top right, #ededed 35%, #ED6E00 99%)'
         },
         text: {
-            primary: '#171820',
-            secondary: '#c81f3d'
+            primary: '#111827',
+            secondary: '#08a9ff'
         },
         niveau: {
-            avance: {
-                main: '#fff0f2',
-                background: '#c81f3d'
-            },
-            intermediaire: {
-                main: '#effcfa',
-                background: '#1aa89c'
-            },
-            debutant: {
-                main: '#3a3f45',
-                background: '#e3e1db'
-            },
             langue: {
-                background: '#e6faf7',
-                main: '#0e8a7d'
+                background: '#ede9fe', 
+                main: '#6b21a8'      
             }
         }
     },
 });
 
-// Thème sombre — encre, corail + cyan en accents
+// Thème sombre
 export const DarkPalette = createTheme({
-    typography,
     palette: {
         mode: 'dark',
         primary: {
-            main: '#ff3d5a',
-            hover: '#ff6178',
+            main: '#a78bfa',
+            hover: '#8f6afb',
         },
         background: {
-            default: '#12131a',
-            paper: '#1b1d26',
-            presentation: 'linear-gradient(to top right, #12131a 35%, #2dd4c6 99%)'
+            default: '#1e293b',
+            paper: "#181e29",
+            presentation: 'linear-gradient(to top right, #1f2527 35%, #ED6E00 99%)'
         },
         text: {
-            primary: '#f6f5f3',
-            secondary: '#2dd4c6'
+            primary: '#f9fafb',
+            secondary: '#dad0f8'
         },
         niveau: {
             avance: {
-                main: '#ffe4e9',
-                background: '#c81f3d'
+                main: '#e0e7ff',
+                background: '#3730a3'
             },
             intermediaire: {
-                main: '#e6faf7',
-                background: '#1aa89c'
+                main: '#ede9fe',
+                background: '#5b21b6'
             },
             debutant: {
-                main: '#d8dbe0',
-                background: '#3a3f45'
+                main: '#fce7f3',
+                background: '#9d174d'
             },
             langue: {
-                background: '#123634',
-                main: '#2dd4c6'
+                background: '#4c1d95', 
+                main: '#ddd6fe'
             }
         }
     },
