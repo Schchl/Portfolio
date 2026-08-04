@@ -325,5 +325,24 @@
       "/competences/laravel.png"
     ],
     "description": "Nous devions réaliser une application web du pokédex avec l'aide de 2 camardes de Création Numérique Lilia Jaziri et Lina Missaoui qui ont réalisé une maquette sur Figma que je devais reproduire en code avec Angular et Laravel en récupérant les données des pokémons dans une API."
+  },
+  {
+    "title": "SAE VR",
+    "cover": "/creations/vr.png",
+    "gallery": [     
+    "/creations/projet_vr_v1-exterieur.png",
+    "/creations/projet_vr_v1-interieur.png",
+    "/creations/projet_vr_v2-exterieur.png",
+    "/creations/projet_vr_v2-interieur.png"
+    ],
+    "link": "https://github.com/ZyFou/SAE_VR",
+    "modal_id": "creation_22",
+    "categories": [
+      "Dev-web"
+    ],
+    "logiciel": [
+      "/competences/unity.png"
+    ],
+    "description": "Projet d'Inclusion & Simulation de Vie (SAE BUT MMI): Ce projet rassemble les travaux de 10 étudiants répartis en 4 groupes, chacun chargé de concevoir une simulation de vie selon un style spécifique (frugal, territorial, réparateur et techno-vert). L'objectif : permettre d'effectuer des actions du quotidien (chauffage, douche, éclairage, météo) en accord avec le mode de vie assigné. En résumé : Étape 1 (Équipe de 3) : Conception de la maison frugale, notre thème dédié, marquée par un défi technique majeur lors de la fusion (merge) des 4 simulations. Étape 2 (Équipe de 2) : Suite à des retours critiques des commanditaires, choix audacieux de repartir de zéro pour revoir intégralement l'expérience et livrer un projet final conforme aux exigences. Ce qu'il faut en retenir : Une expérience intense en gestion de projet, adaptabilité, résolution de conflits Git et capacité de rebond face aux retours clients."
   }
 ]
