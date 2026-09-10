@@ -97,7 +97,9 @@
     "title": "Site Articles Imagine Dragons",
     "cover": "/creations/imagine_dragons_logo.png",
     "gallery": [
-      "/creations/Imagine"
+      "/creations/Imagine_dragons.png",
+      "/creations/Imagine_dragons2.png",
+      "/creations/Imagine_dragons3.png"
     ],
     "modal_id": "creation_8",
     "categories": [
@@ -111,10 +113,13 @@
   {
     "title": "SAE 201 Ravage",
     "cover": "/creations/ravage.png",
-    "gallery": [     
-    "https://drive.google.com/file/d/1sX3AZc5TxmalBIEOe2S0Y8w722ZAH9Yp/preview"
+    "gallery": [    
+    "https://drive.google.com/file/d/1sX3AZc5TxmalBIEOe2S0Y8w722ZAH9Yp/preview",
+    "/creations/RAVAGE.jpg", 
+    "/creations/RAVAGE2.png", 
+    "/creations/RAVAGE3.png", 
+    "/creations/RAVAGE4.png"
     ],
-    "link": "http://web-mmi2.iutbeziers.fr/~chloe.schaum/wordpress4/",
     "modal_id": "creation_9",
     "categories": [
       "Communication",
@@ -176,8 +181,12 @@
   {
     "title": "SAE 203 Site Web PHP",
     "cover": "/creations/php_art.png",
-    "gallery": [],
-    "link": "http://web-mmi2.iutbeziers.fr/~chloe.schaum/SAE203/",
+    "gallery": [
+      "/creations/Wikigeo.png",
+      "/creations/Wikigeo2.png",
+      "/creations/Wikigeo2.png",
+      "/creations/Wikigeo4.png"
+    ],
     "modal_id": "creation_13",
     "categories": [
       "Dev-web"
@@ -192,8 +201,10 @@
   {
     "title": "Site Web Spotify",
     "cover": "/creations/spotify.png",
-    "gallery": [],
-    "link": "http://web-mmi2.iutbeziers.fr/~chloe.schaum/Site_integration_spotify/",
+    "gallery": [
+      "/creations/Music-vibes.png",
+      "/creations/Music-vibes2.png"
+    ],
     "modal_id": "creation_14",
     "categories": [
       "Dev-web"
@@ -246,21 +257,6 @@
       "/competences/js2.png"
     ],
     "description": "Nous avons créé ce jeu vidéo en groupe de 5 personnes lors de notre SAE301 en utilisant la librairie JavaScript: Phaser. Nous devions créer ce jeu de toute pièce, c'est-à-dire de l'histoire aux designs en passant par le codage. Nous nous sommes réparties les tâches et je me suis occupée du développement du jeu. Afin de pouvoir jouer à notre jeu cliquez ici ."
-  },
-  {
-    "title": "Site Bigflo & Oli",
-    "cover": "/creations/beo.png",
-    "gallery": [],
-    "link": "http://web-mmi2.iutbeziers.fr/~chloe.schaum/BigfloEtOli/",
-    "modal_id": "creation_18",
-    "categories": [
-      "Dev-web"
-    ],
-    "logiciel": [
-      "/competences/html2.png",
-      "/competences/css2.png"
-    ],
-    "description": "Lors d'un cours en Création et Design interactif, nous devions designer une page web sur un artiste ou un groupe de notre choix sur le logiciel Figma et par la suite le coder en HTML et CSS pour montrer notre capacité à reproduir une maquette en site. Afin de voir le site web cliquez ici ."
   },
   {
     "title": "CodeGameJam Ubisoft",
