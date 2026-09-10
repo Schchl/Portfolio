@@ -97,9 +97,9 @@
     "title": "Site Articles Imagine Dragons",
     "cover": "/creations/imagine_dragons_logo.png",
     "gallery": [
-      "/creations/Imagine_dragons.png",
-      "/creations/Imagine_dragons2.png",
-      "/creations/Imagine_dragons3.png"
+      "/creations/Imagine_dragon.jpg",
+      "/creations/Imagine_dragon2.jpg",
+      "/creations/Imagine_dragon3.png"
     ],
     "modal_id": "creation_8",
     "categories": [
@@ -108,7 +108,7 @@
     "logiciel": [
       "/competences/wordpress.png"
     ],
-    "description": "Nous avons créé ce site Wordpress afin de travailler notre rédaction d'articles ainsi que leur disposition sur un site web. J'ai décidé de prendre le sujet du groupe Imagine Dragons car j'adore leurs musiques et je m'en inspire souvent sur beaucoup de sujets. Afin de voir le site web cliquez ici ."
+    "description": "Nous avons créé ce site Wordpress afin de travailler notre rédaction d'articles ainsi que leur disposition sur un site web. J'ai décidé de prendre le sujet du groupe Imagine Dragons car j'adore leurs musiques et je m'en inspire souvent sur beaucoup de sujets."
   },
   {
     "title": "SAE 201 Ravage",
@@ -117,7 +117,7 @@
     "https://drive.google.com/file/d/1sX3AZc5TxmalBIEOe2S0Y8w722ZAH9Yp/preview",
     "/creations/RAVAGE.jpg", 
     "/creations/RAVAGE2.png", 
-    "/creations/RAVAGE3.png", 
+    "/creations/RAVAGE3.jpg", 
     "/creations/RAVAGE4.png"
     ],
     "modal_id": "creation_9",
@@ -130,7 +130,7 @@
       "/competences/PR.png",
       "/competences/AE.png"
     ],
-    "description": "Cette SAE était une SAE communication en groupes de 5 personnes, le but était de créer un jeu de société \"comme\" le jeu Risk en prenant en compte les enjeux politiques ainsi que les ressources. Après avoir créer et designer le jeu, nous devions créer un teaser promotionnel ainsi qu'un site web. Voici le lien du site cliquez ici ."
+    "description": "Cette SAE était une SAE communication en groupes de 5 personnes, le but était de créer un jeu de société \"comme\" le jeu Risk en prenant en compte les enjeux politiques ainsi que les ressources. Après avoir créer et designer le jeu, nous devions créer un teaser promotionnel ainsi qu'un site web."
   },
   {
     "title": "Animation logo MMI",
@@ -165,7 +165,7 @@
   },
   {
     "title": "Style de montage Poudovkine",
-    "cover": "/creations/poudov.png",
+    "cover": "/creations/poudov.jpg",
     "gallery": [     
     "https://drive.google.com/file/d/1mwO5Aaoi5PQk5lJItIRbHNIj5lRr8LCS/preview"
     ],
@@ -184,7 +184,7 @@
     "gallery": [
       "/creations/Wikigeo.png",
       "/creations/Wikigeo2.png",
-      "/creations/Wikigeo2.png",
+      "/creations/Wikigeo3.png",
       "/creations/Wikigeo4.png"
     ],
     "modal_id": "creation_13",
@@ -196,7 +196,7 @@
       "/competences/css2.png",
       "/competences/php.png"
     ],
-    "description": "Lors de notre SAE203 en binôme avec ma camarade Pauline Redon, nous avons appris à coder un site en HTML, CSS et PHP en utilisant une base de donnée pour créer une inscription et une identification au site ainsi que pour le stockage des données et leurs affichage. Afin de voir le site web cliquez ici ."
+    "description": "Lors de notre SAE203 en binôme avec ma camarade Pauline Redon, nous avons appris à coder un site en HTML, CSS et PHP en utilisant une base de donnée pour créer une inscription et une identification au site ainsi que pour le stockage des données et leurs affichage."
   },
   {
     "title": "Site Web Spotify",
@@ -213,7 +213,7 @@
       "/competences/html2.png",
       "/competences/css2.png"
     ],
-    "description": "Pour notre cours d'intégration, nous devions réaliser un site web en HTML, CSS et JavaScript en utilisant les données d'un playlist Spotify ainsi que ses musiques stockées sur un fichier json pour pouvoir les afficher sur le site. Afin de voir le site web cliquez ici ."
+    "description": "Pour notre cours d'intégration, nous devions réaliser un site web en HTML, CSS et JavaScript en utilisant les données d'un playlist Spotify ainsi que ses musiques stockées sur un fichier json pour pouvoir les afficher sur le site."
   },
   {
     "title": "Marathon MMI 2024",
@@ -292,7 +292,7 @@
     "title": "Pokédex Angular Laravel",
     "cover": "/creations/pokedex.png",
     "gallery": [     
-    "/creations/pd_accueil.png",
+    "/creations/pd_accueil.jpg",
     "/creations/pd_poke.png",
     "/creations/pd_drac.png"
     ],
@@ -309,12 +309,12 @@
   },
   {
     "title": "SAE VR",
-    "cover": "/creations/vr.png",
+    "cover": "/creations/vr.jpg",
     "gallery": [     
-    "/creations/projet_vr_v1-exterieur.png",
-    "/creations/projet_vr_v1-interieur.png",
-    "/creations/projet_vr_v2-exterieur.png",
-    "/creations/projet_vr_v2-interieur.png"
+    "/creations/projet_vr_v1-exterieur.jpg",
+    "/creations/projet_vr_v1-interieur.jpg",
+    "/creations/projet_vr_v2-exterieur.jpg",
+    "/creations/projet_vr_v2-interieur.jpg"
     ],
     "link": "https://github.com/ZyFou/SAE_VR",
     "modal_id": "creation_22",
