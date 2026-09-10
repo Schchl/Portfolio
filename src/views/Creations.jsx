@@ -179,39 +179,47 @@ export default function MesCreations() {
 
             {/* Iframe avec contrôles de zoom */}
             {activeCreation.iframe && (
-              <div className="mb-6">
-                {/* Iframe container avec overflow pour le zoom */}
-                <div className="flex justify-center">
-                  <div 
-                    className="w-full aspect-video max-h-[70vh] relative rounded border"
-                    style={{ borderColor: theme.palette.divider, overflow: 'hidden' }}
+            <div className="mb-6">
+              <div className="flex justify-center">
+                <div 
+                  className="w-full aspect-video max-h-[70vh] relative rounded border"
+                  style={{ borderColor: theme.palette.divider, overflow: 'hidden' }}
+                >
+                  <div
+                    style={{
+                      transform: `scale(${iframeZoom})`,
+                      transformOrigin: 'top left',
+                      width: `${100 / iframeZoom}%`,
+                      height: `${100 / iframeZoom}%`
+                    }}
                   >
-                    <div
+                    <embed
+                      src={`/Portfolio${activeCreation.iframe}`}
+                      type="application/pdf"
+                      className="w-full h-full bg-black"
                       style={{
-                        transform: `scale(${iframeZoom})`,
-                        transformOrigin: 'top left',
-                        width: `${100 / iframeZoom}%`,
-                        height: `${100 / iframeZoom}%`
+                        border: 'none',
+                        width: '100%',
+                        height: '100%'
                       }}
-                    >
-                      <iframe
-                        src={`/Portfolio${activeCreation.iframe}`}
-                        title="iframe-content"
-                        className="w-full h-full bg-black"
-                        style={{
-                          border: 'none',
-                          width: '100%',
-                          height: '100%'
-                        }}
-                        allowFullScreen
-                        scrolling="auto"
-                        sandbox="allow-scripts allow-popups allow-forms"
-                      />
-                    </div>
+                    />
                   </div>
                 </div>
               </div>
-            )}
+
+              {/* Lien de secours toujours visible, au cas où le PDF ne s'affiche pas */}
+              <div className="mt-2 text-center">
+                <a
+                  href={`/Portfolio${activeCreation.iframe}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 underline text-sm"
+                >
+                  Le PDF ne s'affiche pas ? Cliquez ici pour l'ouvrir dans un nouvel onglet
+                </a>
+              </div>
+            </div>
+          )}
 
             {/* Galerie */}
             {activeCreation.gallery && activeCreation.gallery.length > 0 && (
