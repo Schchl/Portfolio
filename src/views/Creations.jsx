@@ -177,49 +177,23 @@ export default function MesCreations() {
               </a>
             )}
 
-            {/* Iframe avec contrôles de zoom */}
+            {/* PDF : ouverture dans un nouvel onglet */}
             {activeCreation.iframe && (
-            <div className="mb-6">
-              <div className="flex justify-center">
-                <div 
-                  className="w-full aspect-video max-h-[70vh] relative rounded border"
-                  style={{ borderColor: theme.palette.divider, overflow: 'hidden' }}
-                >
-                  <div
-                    style={{
-                      transform: `scale(${iframeZoom})`,
-                      transformOrigin: 'top left',
-                      width: `${100 / iframeZoom}%`,
-                      height: `${100 / iframeZoom}%`
-                    }}
-                  >
-                    <embed
-                      src={`/Portfolio${activeCreation.iframe}`}
-                      type="application/pdf"
-                      className="w-full h-full bg-black"
-                      style={{
-                        border: 'none',
-                        width: '100%',
-                        height: '100%'
-                      }}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Lien de secours toujours visible, au cas où le PDF ne s'affiche pas */}
-              <div className="mt-2 text-center">
+              <div className="mb-6 flex justify-center">
                 <a
                   href={`/Portfolio${activeCreation.iframe}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 underline text-sm"
+                  className="px-6 py-3 rounded font-medium shadow hover:shadow-lg transition"
+                  style={{
+                    backgroundColor: theme.palette.primary.main,
+                    color: theme.palette.primary.contrastText
+                  }}
                 >
-                  Le PDF ne s'affiche pas ? Cliquez ici pour l'ouvrir dans un nouvel onglet
+                  📄 Ouvrir le PDF dans un nouvel onglet
                 </a>
               </div>
-            </div>
-          )}
+            )}
 
             {/* Galerie */}
             {activeCreation.gallery && activeCreation.gallery.length > 0 && (
