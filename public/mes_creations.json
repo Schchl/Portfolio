@@ -94,26 +94,11 @@
     "description": "Pour ce travail j'étais avec Roman Dalenc un camarade de classe, et nous devions créer une identité graphique pour une entreprise fictive d'aide en informatique pour les personnes âgées. Nous avons réalisé cette charte sur le logiciel Illustrator."
   },
   {
-    "title": "SAE 105 Site visite IUT",
-    "cover": "/creations/logo_iut.png",
-    "gallery": [],
-    "link": "http://web-mmi2.iutbeziers.fr/~chloe.schaum/SAE105/",
-    "modal_id": "creation_7",
-    "categories": [
-      "Dev-web"
-    ],
-    "logiciel": [
-      "/competences/html2.png",
-      "/competences/css2.png",
-      "/competences/js2.png"
-    ],
-    "description": "Nous avons créé ce site web lors de notre première SAE 105 développement web, nous devions prendre des photos de l'IUT et les mettre dans notre code HTML et CSS avec un peu de JavaScript afin de mettre en application les connaissances acquises en cours. Afin de voir le site web cliquez ici ."
-  },
-  {
     "title": "Site Articles Imagine Dragons",
     "cover": "/creations/imagine_dragons_logo.png",
-    "gallery": [],
-    "link": "http://web-mmi2.iutbeziers.fr/~chloe.schaum/wordpress3/",
+    "gallery": [
+      "/creations/Imagine"
+    ],
     "modal_id": "creation_8",
     "categories": [
       "Graphisme"
