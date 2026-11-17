@@ -1,134 +1,59 @@
 import { NavLink } from 'react-router-dom';
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import {
-  Button,
-  Box,
-  Drawer,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText
-} from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Squiggle } from './Scribble';
 
-const Header = ({ theme, toggleTheme }) => {
-  const muiTheme = useTheme();
-  const isMobile = useMediaQuery(muiTheme.breakpoints.down('md'));
-  const [drawerOpen, setDrawerOpen] = useState(false);
+const LINKS = [
+  { to: '/', label: 'Présentation' },
+  { to: '/comp', label: 'Compétences' },
+  { to: '/exp', label: 'Expériences' },
+  { to: '/crea', label: 'Créations' },
+  { to: '/contact', label: 'Contact' },
+];
 
-  const links = [
-    { to: '/', label: 'Présentation' },
-    { to: '/comp', label: 'Compétences' },
-    { to: '/exp', label: 'Expériences' },
-    { to: '/crea', label: 'Créations' },
-    { to: '/contact', label: 'Contact' },
-  ];
+export default function Header({ theme, toggleTheme }) {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.toggle('lock', open);
+    return () => document.body.classList.remove('lock');
+  }, [open]);
+
+  const next = theme === 'dark' ? 'clair' : 'sombre';
 
   return (
-    <Box
-      component="header"
-      sx={{
-        backgroundColor: muiTheme.palette.background.default,
-        color: muiTheme.palette.text.primary,
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        px: 4,
-        py: 2,
-        boxShadow: 2,
-        transition: 'all 0.3s ease',
-      }}
-    >
-      {/* Desktop Nav */}
-      {!isMobile && (
-        <Box component="nav" sx={{ display: 'flex', gap: 3 }}>
-          {links.map(({ to, label }) => (
-            <NavLink
-              key={to}
-              to={to}
-              end={to === '/'}
-              style={({ isActive }) => ({
-                color: isActive
-                  ? muiTheme.palette.primary.main
-                  : muiTheme.palette.text.primary,
-                fontWeight: isActive ? '600' : 'normal',
-                textDecoration: 'none',
-                position: 'relative',
-                padding: '4px 0',
-                transition: 'color 0.3s ease',
-              })}
-            >
-              {label}
-            </NavLink>
+    <header className="hdr">
+      <NavLink to="/" className="brand" aria-label="Accueil" onClick={() => setOpen(false)}>
+        <img src="/Portfolio/images/logo.svg" alt="" />
+      </NavLink>
+
+      <nav className="nav" aria-label="Navigation principale">
+        {LINKS.map(({ to, label }) => (
+          <NavLink key={to} to={to} end={to === '/'}>
+            {({ isActive }) => (<>{label}{isActive && <Squiggle />}</>)}
+          </NavLink>
+        ))}
+      </nav>
+
+      <button className="icon-btn" onClick={toggleTheme} aria-label={`Passer en mode ${next}`} title={`Mode ${next}`}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <circle cx="12" cy="12" r="8" />
+          <path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor" />
+        </svg>
+      </button>
+
+      <button className="icon-btn burger" onClick={() => setOpen(!open)} aria-expanded={open} aria-label={open ? 'Fermer le menu' : 'Ouvrir le menu'}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+          {open ? <path d="M6 6l12 12M18 6L6 18" /> : <path d="M4 8h16M4 16h16" />}
+        </svg>
+      </button>
+
+      {open && (
+        <nav className="sheet" aria-label="Menu">
+          {LINKS.map(({ to, label }) => (
+            <NavLink key={to} to={to} end={to === '/'} onClick={() => setOpen(false)}>{label}</NavLink>
           ))}
-        </Box>
+        </nav>
       )}
-
-      {/* Mobile Menu Icon */}
-      {isMobile && (
-        <IconButton onClick={() => setDrawerOpen(true)} color="inherit">
-          <MenuIcon />
-        </IconButton>
-      )}
-
-      {/* Theme Toggle Button */}
-      <Button
-        variant="outlined"
-        onClick={toggleTheme}
-        sx={{
-          borderColor: muiTheme.palette.primary.main,
-          color: muiTheme.palette.primary.main,
-          ml: isMobile ? 1 : 4,
-          '&:hover': {
-            backgroundColor: muiTheme.palette.primary.main,
-            color: '#fff',
-          },
-        }}
-      >
-        Mode {theme === 'dark' ? 'Clair' : 'Sombre'}
-      </Button>
-
-      {/* Drawer for mobile nav */}
-      <Drawer
-        anchor="left"
-        open={drawerOpen}
-        onClose={() => setDrawerOpen(false)}
-      >
-        <Box sx={{ width: 250, p: 2 }}>
-          <IconButton onClick={() => setDrawerOpen(false)}>
-            <CloseIcon />
-          </IconButton>
-          <List>
-            {links.map(({ to, label }) => (
-              <NavLink
-                key={to}
-                to={to}
-                end={to === '/'}
-                style={({ isActive }) => ({
-                  display: 'block',
-                  padding: '12px 16px',
-                  color: isActive
-                    ? muiTheme.palette.primary.main
-                    : muiTheme.palette.text.primary,
-                  fontWeight: isActive ? '600' : 'normal',
-                  textDecoration: 'none',
-                  borderRadius: '8px',
-                  backgroundColor: isActive ? muiTheme.palette.action.hover : 'transparent',
-                  transition: 'background-color 0.3s ease',
-                })}
-                onClick={() => setDrawerOpen(false)}
-              >
-                {label}
-              </NavLink>
-            ))}
-          </List>
-        </Box>
-      </Drawer>
-    </Box>
+    </header>
   );
-};
-
-export default Header;
+}

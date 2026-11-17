@@ -1,81 +1,55 @@
-import { useTheme } from '@mui/material/styles';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const Presentation = () => {
-  const theme = useTheme();
+// Tracé principal : une courbe de Bézier dessinée à la plume, avec ses points d'ancrage et ses poignées.
+const STROKE = 'M-40 560 C180 420 330 700 560 600 C790 500 760 220 980 200 C1200 180 1320 420 1180 600 C1050 760 820 640 900 470 C960 340 1180 330 1500 250';
+const ANCHORS = [[560, 600], [980, 200], [1180, 600]];
+const HANDLES = [[980, 200, 760, 220], [980, 200, 1200, 180], [1180, 600, 1320, 420], [1180, 600, 1050, 760]];
 
+export default function Presentation() {
   return (
-    <div
-      className="min-h-screen px-4 sm:px-8 py-12 sm:py-16 flex flex-col items-center relative overflow-hidden"
-      style={{
-        background: theme.palette.background.presentation,
-      }}
-    >
-      {/* Texte géant en arrière-plan */}
-      <section className="relative flex flex-col lg:flex-row items-center justify-between w-full max-w-6xl z-10">
-        <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
-          <h1
-            className="text-[80px] sm:text-[120px] md:text-[180px] lg:text-[220px] font-extrabold tracking-wider select-none text-center"
-            style={{
-              color: theme.palette.text.primary,
-              opacity: 0.06,
-            }}
-          >
-            PORTFOLIO
-          </h1>
-        </div>
+    <section className="hero">
+      <svg className="hero-art" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path className="stroke" pathLength="1" d={STROKE} />
+        <g className="marks">
+          {HANDLES.map(([x, y, hx, hy], i) => (
+            <g key={i}>
+              <line className="hl" x1={x} y1={y} x2={hx} y2={hy} />
+              <circle className="hk" cx={hx} cy={hy} r="7" />
+            </g>
+          ))}
+          {ANCHORS.map(([x, y], i) => (
+            <rect key={i} className="ha" x={x - 10} y={y - 10} width="20" height="20" />
+          ))}
+        </g>
+      </svg>
 
-        {/* Texte de présentation */}
-        <div className="pre-text text-center lg:text-left mb-8 lg:mb-0 font-montserrat z-10 max-w-xl">
-          <p
-            className="text-3xl sm:text-4xl mb-4"
-            style={{ color: theme.palette.text.primary }}
-          >
-            Salut !
+      <div className="wrap hero-inner">
+        <div>
+          <p className="hello">Salut, je suis</p>
+          <h1 className="display" aria-label="Chloé Schaum">
+            <span>Chloé</span>
+            <span>Schaum</span>
+          </h1>
+          <p className="role">
+            Étudiante en première année de Master Management de l’innovation e-Marketing.
+            <small>Je dessine des interfaces, je les code, et j’apprends à les faire connaître.</small>
           </p>
-
-          <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-2 text-center sm:text-left"
-            style={{ color: theme.palette.text.primary }}
-          >
-            <span className="block sm:inline whitespace-normal sm:whitespace-nowrap">
-              Je suis{" "}
-              <span
-                style={{
-                  color: theme.palette.primary.main,
-                }}
-              >
-                SCHAUM&nbsp;Chloé
-              </span>
-            </span>
-          </h1>
-
-          <h2
-            className="text-2xl sm:text-3xl lg:text-5xl"
-            style={{ color: theme.palette.text.secondary }}
-          >
-            Étudiante en première année de Master
-          </h2>
-          <h3 className="text-xl sm:text-2xl lg:text-3xl"
-            style={{ color: theme.palette.text.primary }}>
-            Management de l’innovation&nbsp;e-Marketing
-          </h3>
+          <div className="cta">
+            <Link className="btn btn-fill" to="/crea">Voir mes créations</Link>
+            <Link className="btn" to="/contact">Me contacter</Link>
+          </div>
         </div>
 
-        {/* Image de présentation */}
-        <NavLink
-          to="/transition-to-game"
-          className="pre-image flex-shrink-0 relative z-20 cursor-pointer"
-        >
-          <img
-            className="rounded-full w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[450px] lg:h-[450px] hover:opacity-80 transition"
-            src="/Portfolio/images/tete.png"
-            alt="Chloé"
-          />
-        </NavLink>
-      </section>
-    </div>
+        <Link to="/transition-to-game" className="portrait" aria-label="Découvrir mon côté gamer">
+          <span className="disc" />
+          <span className="disc-line" />
+          <img src="/Portfolio/images/tete.png" alt="Portrait de Chloé" />
+          <span className="sel" aria-hidden="true">
+            <i /><i /><i /><i /><i /><i /><i /><i />
+          </span>
+          <span className="tip" aria-hidden="true">Clique : mon côté gamer</span>
+        </Link>
+      </div>
+    </section>
   );
-};
-
-export default Presentation;
+}

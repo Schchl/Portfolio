@@ -1,79 +1,52 @@
-import { useTheme } from '@mui/material/styles';
+import { PageHead } from '../components/Scribble';
+
+const GAMES = [
+  {
+    name: 'Minecraft', img: 'minecraft.png', photo: true, color: 'var(--cobalt)', shape: 'tilt',
+    text: [
+      'Je joue à Minecraft depuis 6 ans. Petite, je regardais Frigiel, Siphano, Aypierre… les Fallen Kingdom et les KTP.',
+      'Il y a 6 ans j’ai reçu Minecraft Java premium : j’ai commencé à jouer en survie et en UHC.',
+    ],
+  },
+  {
+    name: 'Among Us', img: 'amongus.png', photo: true, color: 'var(--orange)', shape: 'round',
+    text: [
+      'Entre amis, Among Us c’est parfait ! On découvre la façon de penser des autres… ou de les manipuler.',
+      'Spécialité : tuer une seule personne en boucle au premier tour. Raison : vote par défaut. 😈',
+    ],
+  },
+  {
+    name: 'Valorant', img: 'skye.png', color: 'var(--sun)', shape: 'diamond',
+    text: [
+      'Sur Valorant, je main Skye (même si je sais toujours pas flash correctement 🙈). Je soigne l’équipe, je tente d’être stratégique, et surtout… je râle quand je me fais onetap.',
+      null,
+    ],
+  },
+];
 
 export default function Gamepres() {
-  const theme = useTheme();
-
   return (
-    <div
-      className="min-h-screen p-6"
-      style={{
-        backgroundColor: theme.palette.background.default,
-        color: theme.palette.text.primary,
-      }}
-    >
-      <h1
-        className="text-4xl font-bold mb-10 text-center"
-        style={{ color: theme.palette.primary.main }}
-      >
-        Ma Présentation Gaming
-      </h1>
+    <div className="page wrap">
+      <PageHead title="Gaming" lead="Ce que je joue quand je ne dessine pas et que je ne code pas." variant={1} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-        {/* Minecraft */}
-        <section className="flex flex-col items-center text-center md:text-left">
-          <img
-            src="/Portfolio/game/minecraft.png"
-            alt="Minecraft"
-            className="mb-4 object-contain"
-            style={{ width: 'auto', height: '160px' }}
-          />
+      {GAMES.map((g) => (
+        <section className="stage" key={g.name}>
+          <div className="art" style={{ '--c': g.color }}>
+            <span className={`shape ${g.shape}`} />
+            <span className={`shape-line ${g.shape}`} />
+            <img className={g.photo ? 'photo' : undefined} src={`/Portfolio/game/${g.img}`} alt={g.name} />
+          </div>
           <div>
-            <h2 className="text-2xl font-semibold mb-2">Minecraft</h2>
-            <p className="text-lg leading-relaxed">
-              Je joue à Minecraft depuis 6 ans. Petite, je regardais Frigiel, Siphano, Aypierre... les Fallen Kingdom et les KTP.
-              <br />
-              Il y a 6 ans j'ai reçu Minecraft Java premium : j’ai commencé à jouer en survie et en UHC.
-            </p>
+            <h2 className="display">{g.name}</h2>
+            {g.text.map((t, i) => t && <p key={i}>{t}</p>)}
+            {g.name === 'Valorant' && (
+              <p>
+                <s>Je joue pour prouver que les filles savent jouer</s> (Chloé arrête de mentir, t’es encore fer 3 après un an de jeu 💀)
+              </p>
+            )}
           </div>
         </section>
-
-        {/* Among Us */}
-        <section className="flex flex-col items-center text-center md:text-left">
-          <img
-            src="/Portfolio/game/amongus.png"
-            alt="Among Us"
-            className="mb-4 object-contain"
-            style={{ width: 'auto', height: '160px' }}
-          />
-          <div>
-            <h2 className="text-2xl font-semibold mb-2">Among Us</h2>
-            <p className="text-lg leading-relaxed">
-              Entre amis, Among Us c’est parfait ! On découvre la façon de penser des autres... ou de les manipuler.
-              <br />
-              Spécialité : tuer une seule personne en boucle au premier tour. Raison: Vote par défaut. 😈
-            </p>
-          </div>
-        </section>
-
-        {/* Valorant */}
-        <section className="flex flex-col items-center text-center md:text-left md:col-span-2">
-          <img
-            src="/Portfolio/game/skye.png"
-            alt="Skye de Valorant"
-            className="mb-4 object-contain"
-            style={{ width: 'auto', height: '160px' }}
-          />
-          <div>
-            <h2 className="text-2xl font-semibold mb-2">Valorant</h2>
-            <p className="text-lg leading-relaxed">
-              Sur Valorant, je main <strong>Skye</strong> (même si je sais toujours pas flash correctement 🙈).
-              Je soigne l’équipe, je tente d’être stratégique, et surtout… je râle quand je me fait onetap.
-              <br />
-              <s>Je joue pour prouver que les filles savent jouer</s> (Chloé arrête de mentir t'es encore fer 3 après un an de jeu 💀)
-            </p>
-          </div>
-        </section>
-      </div>
+      ))}
     </div>
   );
 }

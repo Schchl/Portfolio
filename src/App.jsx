@@ -1,11 +1,7 @@
-import { HashRouter as Router, Routes, Route }from 'react-router-dom';
-import { useState, useEffect, useMemo } from 'react';
-import { ThemeProvider, CssBaseline } from '@mui/material';
-import { LightPalette, DarkPalette } from './components/Theme';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
-import BinaryRoute from "./components/BinaryRoute";
+import BinaryRoute from './components/BinaryRoute';
 import Header from './components/Header';
 import Presentation from './views/Presentation';
 import Competences from './views/Competences';
@@ -15,44 +11,40 @@ import Contact from './views/Contact';
 import Gamepres from './views/Gamepres';
 import NotFound from './views/NotFound';
 
-function App() {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('theme') || 'light';
-  });
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
-  };
-
-  // Synchroniser la classe HTML pour Tailwind (facultatif si tu utilises aussi Tailwind)
-  useEffect(() => {
-    localStorage.setItem('theme', theme);
-    document.documentElement.classList.toggle('dark', theme === 'dark');
-  }, [theme]);
-
-  // Choisir le thème MUI dynamiquement
-  const muiTheme = useMemo(() => {
-    return theme === 'dark' ? DarkPalette : LightPalette;
-  }, [theme]);
-
-  return (
-    <ThemeProvider theme={muiTheme}>
-      <CssBaseline />
-      <Router>
-        <Header theme={theme} toggleTheme={toggleTheme} />
-        <Routes>
-          <Route path="/" element={<Presentation theme={theme} />} />
-          <Route path="/comp" element={<Competences theme={theme} />} />
-          <Route path="/exp" element={<Experiences theme={theme} />} />
-          <Route path="/crea" element={<Creations theme={theme} />} />
-          <Route path="/contact" element={<Contact theme={theme} />} />
-          <Route path="/transition-to-game" element={<BinaryRoute to="/game" theme={theme} />} />
-          <Route path="/game" element={<Gamepres theme={theme} />} />
-          <Route path="*" element={<NotFound theme={theme} />} />
-        </Routes>
-      </Router>
-    </ThemeProvider>
-  );
+function ScrollTop() {
+  const { pathname } = useLocation();
+  useEffect(() => window.scrollTo(0, 0), [pathname]);
+  return null;
 }
 
-export default App;
+export default function App() {
+  const [theme, setTheme] = useState(() => {
+    try { return localStorage.getItem('theme') || 'light'; } catch { return 'light'; }
+  });
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    try { localStorage.setItem('theme', theme); } catch { /* stockage indisponible */ }
+  }, [theme]);
+
+  const toggleTheme = () => setTheme((t) => (t === 'light' ? 'dark' : 'light'));
+
+  return (
+    <Router>
+      <ScrollTop />
+      <Header theme={theme} toggleTheme={toggleTheme} />
+      <main>
+        <Routes>
+          <Route path="/" element={<Presentation />} />
+          <Route path="/comp" element={<Competences />} />
+          <Route path="/exp" element={<Experiences />} />
+          <Route path="/crea" element={<Creations />} />
+          <Route path="/contact" element={<Contact theme={theme} />} />
+          <Route path="/transition-to-game" element={<BinaryRoute />} />
+          <Route path="/game" element={<Gamepres />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+    </Router>
+  );
+}
