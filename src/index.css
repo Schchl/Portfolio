@@ -109,8 +109,9 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   display: flex; flex-direction: column; justify-content: center; gap: 0.4rem;
   padding: var(--gutter);
   background: var(--paper);
+  overflow-y: auto;
 }
-.sheet a { font-size: clamp(3rem, 14vw, 5.5rem); font-weight: 800; font-stretch: 75%; text-transform: uppercase; line-height: 1; text-decoration: none; color: var(--ink-soft); }
+.sheet a { font-size: clamp(2.6rem, 12vw, 5rem); font-weight: 800; font-stretch: 75%; text-transform: uppercase; line-height: 1; text-decoration: none; color: var(--ink-soft); }
 .sheet a.active { color: var(--orange); }
 
 @media (max-width: 880px) {

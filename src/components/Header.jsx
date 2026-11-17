@@ -21,6 +21,7 @@ export default function Header({ theme, toggleTheme }) {
   const next = theme === 'dark' ? 'clair' : 'sombre';
 
   return (
+    <>
     <header className="hdr">
       <NavLink to="/" className="brand" aria-label="Accueil" onClick={() => setOpen(false)}>
         <img src="/Portfolio/images/logo.svg" alt="" />
@@ -47,13 +48,14 @@ export default function Header({ theme, toggleTheme }) {
         </svg>
       </button>
 
-      {open && (
+    </header>
+    {open && (
         <nav className="sheet" aria-label="Menu">
           {LINKS.map(({ to, label }) => (
             <NavLink key={to} to={to} end={to === '/'} onClick={() => setOpen(false)}>{label}</NavLink>
           ))}
         </nav>
       )}
-    </header>
+    </>
   );
 }
