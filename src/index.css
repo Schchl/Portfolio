@@ -174,7 +174,7 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 /* ─────────── Compétences ─────────── */
 .group { margin-top: 3.5rem; }
 .group:first-of-type { margin-top: 0; }
-.group h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); font-weight: 700; font-stretch: 80%; letter-spacing: -0.01em; margin-bottom: 1.8rem; padding-bottom: 0.6rem; border-bottom: 1.5px solid var(--ink); }
+.group > h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); font-weight: 700; font-stretch: 80%; letter-spacing: -0.01em; margin-bottom: 1.8rem; padding-bottom: 0.6rem; border-bottom: 1.5px solid var(--ink); }
 .tools { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 2.2rem 1rem; }
 .tool { text-align: center; }
 .ring-wrap { position: relative; width: 116px; height: 116px; margin: 0 auto 0.8rem; }
@@ -301,10 +301,29 @@ video.embed { object-fit: contain; }
 .art .diamond.shape-line { transform: rotate(45deg) scale(0.78) translate(14px, 14px); }
 .art img { position: relative; width: auto; max-height: clamp(300px, 38vw, 460px); object-fit: contain; }
 .art img.photo { max-height: clamp(220px, 28vw, 340px); border: 2px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); }
-.stage h2 { font-size: clamp(3rem, 8vw, 6.5rem); margin-bottom: 1.2rem; }
+.stage h3 { font-size: clamp(3rem, 8vw, 6.5rem); margin-bottom: 1.2rem; }
 .stage p { max-width: 34rem; }
 .stage p + p { margin-top: 0.8rem; }
 @media (max-width: 800px) { .stage { grid-template-columns: 1fr; } .stage:nth-child(even) .art { order: 0; } .art { height: 300px; } .art img { max-height: 300px; } .art img.photo { max-height: 230px; } }
+
+/* Photos « hors écran » */
+.shots { columns: 3 280px; column-gap: 2.4rem; margin-top: 2.2rem; }
+.shots li { break-inside: avoid; margin: 0 0 2.6rem; }
+.shots li:nth-child(odd) .shot { transform: rotate(-1.2deg); }
+.shots li:nth-child(even) .shot { transform: rotate(1deg); }
+.shot { display: block; width: 100%; padding: 0; border: 0; background: none; text-align: left; transition: transform 0.25s ease; }
+.shots li .shot:hover { transform: rotate(0) scale(1.02); }
+.shot-frame { position: relative; display: block; background: var(--paper-2); }
+.shot-frame img { width: 100%; height: auto; }
+.shot:hover .crop { border-color: var(--orange); width: 30px; height: 30px; }
+.shot:hover .crop.a { top: -14px; left: -14px; } .shot:hover .crop.b { top: -14px; right: -14px; }
+.shot:hover .crop.c { bottom: -14px; left: -14px; } .shot:hover .crop.d { bottom: -14px; right: -14px; }
+.shot-cap { display: block; margin-top: 0.9rem; font-weight: 600; font-stretch: 85%; font-size: 1.1rem; line-height: 1.25; }
+.lightbox { position: relative; margin: 0; max-width: min(1000px, 100%); padding: 1rem; background: var(--paper); border: 2px solid var(--ink); box-shadow: 10px 10px 0 var(--orange); }
+.lightbox img { max-height: 76vh; width: auto; margin: 0 auto; object-fit: contain; }
+.lightbox figcaption { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 0.9rem; font-weight: 600; font-size: 1.15rem; }
+.lightbox .gal-nav { margin: 0; display: flex; gap: 0.5rem; }
+.lightbox .x { top: 1.6rem; right: 1.6rem; }
 
 /* ─────────── Transition + 404 ─────────── */
 .binary { position: fixed; inset: 0; z-index: 90; background: var(--paper); }

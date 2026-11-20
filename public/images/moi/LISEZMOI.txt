@@ -1,0 +1,3 @@
+Dépose tes photos ici (jpg, png ou webp), puis ajoute une ligne par photo dans public/moi.json.
+Une photo dont le fichier n'existe pas est ignorée : le site n'affiche jamais d'image cassée.
+Astuce : réduis tes photos à ~1600 px de large (et < 400 Ko) pour que la page reste rapide.

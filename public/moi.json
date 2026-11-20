@@ -1,0 +1,9 @@
+{
+  "photos": [
+    { "src": "/images/moi/cor.jpg", "legende": "Avec mon cor d’harmonie", "categorie": "Musique" },
+    { "src": "/images/moi/amis-1.jpg", "legende": "Soirée jeux avec les copains", "categorie": "Amis" },
+    { "src": "/images/moi/amis-2.jpg", "legende": "La team au complet", "categorie": "Amis" },
+    { "src": "/images/moi/orchestre.jpg", "legende": "Concert de l’orchestre", "categorie": "Musique" },
+    { "src": "/images/moi/setup.jpg", "legende": "Mon setup", "categorie": "Gaming" }
+  ]
+}
