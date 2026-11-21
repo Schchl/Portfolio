@@ -8,7 +8,7 @@ import Competences from './views/Competences';
 import Experiences from './views/Experiences';
 import Creations from './views/Creations';
 import Contact from './views/Contact';
-import Gamepres from './views/Gamepres';
+import Moi from './views/Moi';
 import NotFound from './views/NotFound';
 
 function ScrollTop() {
@@ -42,8 +42,8 @@ export default function App() {
           <Route path="/exp" element={<Experiences />} />
           <Route path="/crea" element={<Creations />} />
           <Route path="/contact" element={<Contact theme={theme} />} />
-          <Route path="/transition-to-game" element={<BinaryRoute />} />
-          <Route path="/game" element={<Gamepres />} />
+          <Route path="/transition-moi" element={<BinaryRoute />} />
+          <Route path="/moi" element={<Moi />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
