@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-// Pluie de 0 et de 1 aux couleurs du site, pendant la transition vers la page gaming.
+// Pluie de 0 et de 1 aux couleurs du site, pendant la transition vers la page « Moi, en vrai ».
 export default function BinaryTransition() {
   const ref = useRef(null);
 

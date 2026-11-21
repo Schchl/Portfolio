@@ -1,9 +1,39 @@
 {
   "photos": [
-    { "src": "/images/moi/cor.jpg", "legende": "Avec mon cor d’harmonie", "categorie": "Musique" },
-    { "src": "/images/moi/amis-1.jpg", "legende": "Soirée jeux avec les copains", "categorie": "Amis" },
-    { "src": "/images/moi/amis-2.jpg", "legende": "La team au complet", "categorie": "Amis" },
-    { "src": "/images/moi/orchestre.jpg", "legende": "Concert de l’orchestre", "categorie": "Musique" },
-    { "src": "/images/moi/setup.jpg", "legende": "Mon setup", "categorie": "Gaming" }
+    {
+      "src": "/images/moi/cor-peyrou-1.jpg",
+      "legende": "Au milieu de l’orchestre, au Peyrou",
+      "categorie": "Musique"
+    },
+    {
+      "src": "/images/moi/cor-tournage.jpg",
+      "legende": "Mon cor s’invite dans un tournage audiovisuel",
+      "categorie": "Musique"
+    },
+    {
+      "src": "/images/moi/cor-peyrou-2.jpg",
+      "legende": "Concert de Noël au Peyrou, cor en main",
+      "categorie": "Musique"
+    },
+    {
+      "src": "/images/moi/remise-but.jpg",
+      "legende": "Remise des diplômes du BUT MMI",
+      "categorie": "Promo & copines"
+    },
+    {
+      "src": "/images/moi/remise-but-copines.jpg",
+      "legende": "La team MMI en toge, IUT de Béziers",
+      "categorie": "Promo & copines"
+    },
+    {
+      "src": "/images/moi/gala-iae-promo.jpg",
+      "legende": "Gala de l’IAE avec la promo e-Marketing",
+      "categorie": "Promo & copines"
+    },
+    {
+      "src": "/images/moi/gala-iae-copines.jpg",
+      "legende": "Gala de l’IAE, sous l’arche fleurie avec mes copines",
+      "categorie": "Promo & copines"
+    }
   ]
 }

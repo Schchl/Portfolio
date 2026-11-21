@@ -288,24 +288,6 @@ video.embed { object-fit: contain; }
 }
 .toast { position: fixed; left: 50%; bottom: 1.6rem; transform: translateX(-50%); z-index: 60; padding: 0.7rem 1.3rem; background: var(--ink); color: var(--paper); font-weight: 600; border-radius: 999px; }
 
-/* ─────────── Gaming ─────────── */
-.stage { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; padding: 3rem 0; }
-.stage:nth-child(even) .art { order: 2; }
-.art { position: relative; display: grid; place-items: center; height: clamp(300px, 38vw, 460px); }
-.art .shape { position: absolute; width: 78%; aspect-ratio: 1; background: var(--c); }
-.art .shape-line { position: absolute; width: 78%; aspect-ratio: 1; border: 2px solid var(--ink); transform: translate(16px, 14px); }
-.art .round { border-radius: 50%; }
-.art .tilt { transform: rotate(-8deg); }
-.art .tilt.shape-line { transform: rotate(-8deg) translate(16px, 14px); }
-.art .diamond { transform: rotate(45deg) scale(0.78); }
-.art .diamond.shape-line { transform: rotate(45deg) scale(0.78) translate(14px, 14px); }
-.art img { position: relative; width: auto; max-height: clamp(300px, 38vw, 460px); object-fit: contain; }
-.art img.photo { max-height: clamp(220px, 28vw, 340px); border: 2px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); }
-.stage h3 { font-size: clamp(3rem, 8vw, 6.5rem); margin-bottom: 1.2rem; }
-.stage p { max-width: 34rem; }
-.stage p + p { margin-top: 0.8rem; }
-@media (max-width: 800px) { .stage { grid-template-columns: 1fr; } .stage:nth-child(even) .art { order: 0; } .art { height: 300px; } .art img { max-height: 300px; } .art img.photo { max-height: 230px; } }
-
 /* Photos « hors écran » */
 .shots { columns: 3 280px; column-gap: 2.4rem; margin-top: 2.2rem; }
 .shots li { break-inside: avoid; margin: 0 0 2.6rem; }

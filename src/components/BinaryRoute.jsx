@@ -7,7 +7,7 @@ export default function BinaryRoute() {
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   useEffect(() => {
-    const timer = setTimeout(() => navigate('/game', { replace: true }), reduce ? 0 : 1500);
+    const timer = setTimeout(() => navigate('/moi', { replace: true }), reduce ? 0 : 1500);
     return () => clearTimeout(timer);
   }, [navigate, reduce]);
 

@@ -40,14 +40,14 @@ export default function Presentation() {
           </div>
         </div>
 
-        <Link to="/transition-to-game" className="portrait" aria-label="Découvrir mon côté gamer">
+        <Link to="/transition-moi" className="portrait" aria-label="Découvrir qui je suis en dehors de l’écran">
           <span className="disc" />
           <span className="disc-line" />
           <img src="/Portfolio/images/tete.png" alt="Portrait de Chloé" />
           <span className="sel" aria-hidden="true">
             <i /><i /><i /><i /><i /><i /><i /><i />
           </span>
-          <span className="tip" aria-hidden="true">Clique : mon côté gamer</span>
+          <span className="tip" aria-hidden="true">Clique : qui je suis en vrai</span>
         </Link>
       </div>
     </section>
