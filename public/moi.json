@@ -1,17 +1,17 @@
 {
   "photos": [
     {
-      "src": "/images/moi/cor-peyrou-1.jpg",
+      "src": "/images/moi/cor_peyrou1.jpg",
       "legende": "Au milieu de l’orchestre, au Peyrou",
       "categorie": "Musique"
     },
     {
-      "src": "/images/moi/cor-tournage.jpg",
+      "src": "/images/moi/cor_audiovisuel.png",
       "legende": "Mon cor s’invite dans un tournage audiovisuel",
       "categorie": "Musique"
     },
     {
-      "src": "/images/moi/cor-peyrou-2.jpg",
+      "src": "/images/moi/cor_peyrou2.jpg",
       "legende": "Concert de Noël au Peyrou, cor en main",
       "categorie": "Musique"
     },
@@ -26,7 +26,7 @@
       "categorie": "Promo & copines"
     },
     {
-      "src": "/images/moi/gala-iae-promo.jpg",
+      "src": "/images/moi/gala-iae-emark.jpg",
       "legende": "Gala de l’IAE avec la promo e-Marketing",
       "categorie": "Promo & copines"
     },
