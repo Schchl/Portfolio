@@ -289,20 +289,19 @@ video.embed { object-fit: contain; }
 .toast { position: fixed; left: 50%; bottom: 1.6rem; transform: translateX(-50%); z-index: 60; padding: 0.7rem 1.3rem; background: var(--ink); color: var(--paper); font-weight: 600; border-radius: 999px; }
 
 /* Photos « hors écran » */
-.shots { columns: 3 280px; column-gap: 2.4rem; margin-top: 2.2rem; }
-.shots li { break-inside: avoid; margin: 0 0 2.6rem; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2.8rem 2.2rem; margin-top: 2.2rem; }
 .shots li:nth-child(odd) .shot { transform: rotate(-1.2deg); }
 .shots li:nth-child(even) .shot { transform: rotate(1deg); }
 .shot { display: block; width: 100%; padding: 0; border: 0; background: none; text-align: left; transition: transform 0.25s ease; }
 .shots li .shot:hover { transform: rotate(0) scale(1.02); }
-.shot-frame { position: relative; display: block; background: var(--paper-2); }
-.shot-frame img { width: 100%; height: auto; }
+.shot-frame { position: relative; display: block; aspect-ratio: 1; background: var(--paper-2); }
+.shot-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
 .shot:hover .crop { border-color: var(--orange); width: 30px; height: 30px; }
 .shot:hover .crop.a { top: -14px; left: -14px; } .shot:hover .crop.b { top: -14px; right: -14px; }
 .shot:hover .crop.c { bottom: -14px; left: -14px; } .shot:hover .crop.d { bottom: -14px; right: -14px; }
 .shot-cap { display: block; margin-top: 0.9rem; font-weight: 600; font-stretch: 85%; font-size: 1.1rem; line-height: 1.25; }
 .lightbox { position: relative; margin: 0; max-width: min(1000px, 100%); padding: 1rem; background: var(--paper); border: 2px solid var(--ink); box-shadow: 10px 10px 0 var(--orange); }
-.lightbox img { max-height: 76vh; width: auto; margin: 0 auto; object-fit: contain; }
+.lightbox img { max-width: 100%; max-height: 76vh; width: auto; height: auto; margin: 0 auto; object-fit: contain; }
 .lightbox figcaption { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 0.9rem; font-weight: 600; font-size: 1.15rem; }
 .lightbox .gal-nav { margin: 0; display: flex; gap: 0.5rem; }
 .lightbox .x { top: 1.6rem; right: 1.6rem; }
