@@ -31,7 +31,7 @@ export default function Presentation() {
             <span>Schaum</span>
           </h1>
           <p className="role">
-            Étudiante en première année de Master Management de l’innovation e-Marketing.
+            Étudiante en deuxième année de Master Management de l’innovation e-Marketing.
             <small>Je dessine des interfaces, je les code, et j’apprends à les faire connaître.</small>
           </p>
           <div className="cta">
