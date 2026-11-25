@@ -220,6 +220,11 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .what { margin-top: 0.7rem; max-width: 36rem; }
 .what div + div { margin-top: 0.15rem; color: var(--ink-soft); font-size: 0.98rem; }
 
+.ext-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin-top: 0.8rem; }
+.ext { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0 0.15rem 2px; font-weight: 600; text-decoration: none; color: var(--cobalt); background: linear-gradient(var(--orange), var(--orange)) no-repeat left bottom / 100% 2px; transition: background-size 0.25s ease, color 0.25s ease; }
+.ext svg { width: 14px; height: 14px; }
+.ext:hover { background-size: 100% 100%; color: var(--on-orange); }
+
 @media (max-width: 900px) {
   .exp-layout { grid-template-columns: 1fr; gap: 2rem; }
   .filters { position: static; }

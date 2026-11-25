@@ -13,7 +13,13 @@
     {
       "date": "Juillet 2023 - Août 2023\nJuillet 2024 - Août 2024",
       "label": "Hôtesse de caisse Carrefour de Sérignan",
-      "icon": "/images/o_star.png"
+      "icon": "/images/o_star.png",
+      "liens": [
+        {
+          "texte": "Site de Carrefour",
+          "url": "https://www.carrefour.fr"
+        }
+      ]
     },
     {
       "date": "Janvier 2023",
@@ -28,16 +34,27 @@
     {
       "date": "8 avril 2025 - 21 juin 2025",
       "label": "Stage multimédia pour la création d’un organigramme interactif chez Genvia à Béziers",
-      "icon": "/images/o_star.png"
+      "icon": "/images/o_star.png",
+      "liens": [
+        {
+          "texte": "Site de Genvia",
+          "url": "https://genvia.com"
+        }
+      ]
     },
     {
       "date": "4 décembre 2025",
       "label": "Alternance en tant que Community Manager chez Matériel Soudure à Saint-Thibéry",
-      "icon": "/images/g_star.png"
+      "icon": "/images/g_star.png",
+      "liens": [
+        {
+          "texte": "Site de Matériel Soudure",
+          "url": "https://materiel-soudure.fr"
+        }
+      ]
     }
-    ],
-
-    "parcours": [
+  ],
+  "parcours": [
     {
       "date": "2015-2019",
       "label": "Collège Françoise Giroud Vendres - Brevet mention très bien",
@@ -46,17 +63,35 @@
     {
       "date": "2019-2022",
       "label": "Lycée Marc Bloch Sérignan - Baccalauréat mention assez bien",
-      "icon": "/images/y_star.png"
+      "icon": "/images/y_star.png",
+      "liens": [
+        {
+          "texte": "Fiche du lycée (Onisep)",
+          "url": "https://www.onisep.fr/ressources/structures-enseignement/occitanie/herault/lycee-polyvalent-marc-bloch"
+        }
+      ]
     },
     {
       "date": "2022 - 2025",
       "label": "IUT Béziers - BUT Métiers du Multimédia et de l'Internet\nParcours développement web et dispositifs interactifs",
-      "icon": "/images/y_star.png"
+      "icon": "/images/y_star.png",
+      "liens": [
+        {
+          "texte": "Site de l’IUT de Béziers",
+          "url": "https://iut-beziers.edu.umontpellier.fr"
+        }
+      ]
     },
     {
       "date": "2025",
       "label": "IAE Montpellier - Master Management de l’innovation\ne-Marketing",
-      "icon": "/images/g_star.png"
+      "icon": "/images/g_star.png",
+      "liens": [
+        {
+          "texte": "Site de l’IAE Montpellier",
+          "url": "https://iae.umontpellier.fr"
+        }
+      ]
     }
   ]
 }

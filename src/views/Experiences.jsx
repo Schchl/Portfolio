@@ -84,6 +84,16 @@ export default function Experiences() {
                     <span className="sr">{sq ? 'Expérience : ' : 'Formation : '}</span>
                     {item.label.split('\n').map((l) => <div key={l}>{l}</div>)}
                   </div>
+                  {item.liens?.length > 0 && (
+                    <div className="ext-links">
+                      {item.liens.map((l) => (
+                        <a key={l.url} className="ext" href={l.url} target="_blank" rel="noopener noreferrer">
+                          {l.texte}
+                          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5" /></svg>
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </li>
             );
