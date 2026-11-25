@@ -28,8 +28,14 @@
     },
     {
       "date": "29 avril 2024 - 21 juin 2024",
-      "label": "Stage graphisme et développement CMS chez Distribution du Midi à Vendres et Jour2Marché",
-      "icon": "/images/o_star.png"
+      "label": "Stage graphisme et développement CMS chez Distribution du Midi à Vendres / Maraussan et Jour2Marché",
+      "icon": "/images/o_star.png",
+      "liens": [
+        {
+          "texte": "Site de Jour2Marché",
+          "url": "https://jour2marche.fr"
+        }
+      ]
     },
     {
       "date": "8 avril 2025 - 21 juin 2025",
@@ -58,7 +64,13 @@
     {
       "date": "2015-2019",
       "label": "Collège Françoise Giroud Vendres - Brevet mention très bien",
-      "icon": "/images/y_star.png"
+      "icon": "/images/y_star.png",
+      "liens": [
+        {
+          "texte": "Site du Collège Françoise Giroud",
+          "url": "https://francoise-giroud.mon-ent-occitanie.fr"
+        }
+      ]
     },
     {
       "date": "2019-2022",
@@ -66,8 +78,8 @@
       "icon": "/images/y_star.png",
       "liens": [
         {
-          "texte": "Fiche du lycée (Onisep)",
-          "url": "https://www.onisep.fr/ressources/structures-enseignement/occitanie/herault/lycee-polyvalent-marc-bloch"
+          "texte": "Site du Lycée Marc Bloch",
+          "url": "https://marc-bloch.mon-ent-occitanie.fr"
         }
       ]
     },
